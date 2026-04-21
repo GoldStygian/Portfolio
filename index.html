@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="it" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raffaele Raia | Computer Science Graduate & Developer. Python, C++, Java, Deep Learning, Cybersecurity.">
+    <meta name="description"
+        content="Raffaele Raia | Computer Science Graduate & Developer. Python, C++, Java, Deep Learning, Cybersecurity.">
     <meta name="keywords" content="Raffaele Raia, CS Graduate, Developer">
     <meta name="author" content="Raffaele Raia">
     <meta property="og:type" content="website">
@@ -12,29 +14,44 @@
     <title>Raffaele Raia Portfolio</title>
     <meta name="theme-color" content="#EAE8D5">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Raffaele Raia",
-      "jobTitle": "Computer Science Graduate & Developer",
-      "knowsAbout": ["Python", "C++", "Java", "C", "TypeScript", "Angular", "PyTorch", "Deep Learning", "Flutter", "NestJS", "JavaScript", "Django", "Express", "Cybersecurity"],
-      "affiliation": { "@type": "Organization", "name": "Università degli Studi di Napoli Federico II" },
-      "sameAs": [
-        "https://github.com/GoldStygian",
-        "https://www.linkedin.com/in/raffaeleraia/"
-      ]
-    }
+    <!-- ══════════════════════════════════════════════════════════════
+         PORTFOLIO DATA
+    ══════════════════════════════════════════════════════════════ -->
+    <script>
+    const DATA = {
+        name: "Raffaele Raia",
+        tagline: "CS Graduate & Developer",
+        location: { city: "Napoli", country: "Italia" },
+        university: {
+            full: "Università degli Studi di Napoli Federico II",
+            short: "Federico II",
+        },
+        degree: { score: "110/110" },
+        socials: {
+            github:      { url: "https://github.com/GoldStygian", username: "GoldStygian", repos: "https://github.com/GoldStygian?tab=repositories" },
+            linkedin:    { url: "https://www.linkedin.com/in/raffaeleraia/", label: "Raffaele Raia" },
+            email:       "raffaele.raia.work@gmail.com",
+        },
+        tech_stack: {
+            os: ["Linux", "Windows"],
+            languages: ["Python", "C", "C++", "Java", "TypeScript"],
+            frameworks: ["Angular", "Django", "Express", "Flutter"],
+            tools: ["PostgreSQL", "Docker", "Git", "Selenium", "Postman", "Azure", "Figma", "LaTeX", "Bash"],
+        }
+    };
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
     <!-- Cursor -->
@@ -47,7 +64,7 @@
     ═══════════════════════════════════════════════════ -->
     <nav>
         <div class="nav-top">
-            <span class="nav-masthead">Raffaele Raia</span>
+            <span class="nav-masthead data.name">Raffaele Raia</span>
             <div class="nav-status">
                 <div class="status-dot"></div>
                 <span>Sistema Online</span>
@@ -57,9 +74,10 @@
         </div>
         <div class="nav-links">
             <a href="#about">/About</a>
+            <a href="#formazione">/Formazione</a>
             <a href="#experience">/Experience</a>
-            <a href="#projects">/Projects</a>
             <a href="#coding-stats">/Stats</a>
+            <a href="#projects">/Projects</a>
             <a href="#reports">/Reports</a>
             <a href="#contact" class="cta">Contact ▶</a>
         </div>
@@ -87,10 +105,10 @@
             </p>
 
             <div class="hero-links reveal">
-                <a href="https://github.com/GoldStygian" target="_blank" class="hero-link primary">
+                <a href="#" target="_blank" class="hero-link primary data.socials.github.url">
                     <i class="ri-github-fill"></i> GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/raffaeleraia/" target="_blank" class="hero-link">
+                <a href="#" target="_blank" class="hero-link data.socials.linkedin.url">
                     <i class="ri-linkedin-box-fill"></i> LinkedIn
                 </a>
                 <a href="#contact" class="hero-link">
@@ -132,41 +150,7 @@
          TICKER STRIP
     ═══════════════════════════════════════════════════ -->
     <div class="ticker-strip">
-        <div class="ticker-content">
-            <span>Python <span class="ticker-dot">✦</span></span>
-            <span>C++ <span class="ticker-dot">✦</span></span>
-            <span>Java <span class="ticker-dot">✦</span></span>
-            <span>C <span class="ticker-dot">✦</span></span>
-            <span>PyTorch <span class="ticker-dot">✦</span></span>
-            <span>Deep Learning <span class="ticker-dot">✦</span></span>
-            <span>ROS 2 <span class="ticker-dot">✦</span></span>
-            <span>Flutter <span class="ticker-dot">✦</span></span>
-            <span>NestJS <span class="ticker-dot">✦</span></span>
-            <span>Docker <span class="ticker-dot">✦</span></span>
-            <span>PostgreSQL <span class="ticker-dot">✦</span></span>
-            <span>Linux <span class="ticker-dot">✦</span></span>
-            <span>Git <span class="ticker-dot">✦</span></span>
-            <span>Azure <span class="ticker-dot">✦</span></span>
-            <span>Figma <span class="ticker-dot">✦</span></span>
-            <!-- Duplicated for seamless loop -->
-            <span>Python <span class="ticker-dot">✦</span></span>
-            <span>C++ <span class="ticker-dot">✦</span></span>
-            <span>Java <span class="ticker-dot">✦</span></span>
-            <span>C <span class="ticker-dot">✦</span></span>
-            <span>TypeScript <span class="ticker-dot">✦</span></span>
-            <span>Angular <span class="ticker-dot">✦</span></span>
-            <span>PyTorch <span class="ticker-dot">✦</span></span>
-            <span>Deep Learning <span class="ticker-dot">✦</span></span>
-            <span>ROS 2 <span class="ticker-dot">✦</span></span>
-            <span>Flutter <span class="ticker-dot">✦</span></span>
-            <span>NestJS <span class="ticker-dot">✦</span></span>
-            <span>Docker <span class="ticker-dot">✦</span></span>
-            <span>PostgreSQL <span class="ticker-dot">✦</span></span>
-            <span>Linux <span class="ticker-dot">✦</span></span>
-            <span>Git <span class="ticker-dot">✦</span></span>
-            <span>Azure <span class="ticker-dot">✦</span></span>
-            <span>Cybersecurity <span class="ticker-dot">✦</span></span>
-        </div>
+        <div class="ticker-content" id="ticker-content"></div>
     </div>
 
     <!-- ═══════════════════════════════════════════════════
@@ -183,15 +167,14 @@
             <div class="about-grid">
                 <div class="about-bio reveal">
                     <p>
-                        Sono <strong>Raffaele Raia</strong>, laureato in Informatica con <strong>110/110</strong> all'<strong>Università degli Studi di Napoli Federico II</strong>. Mi appassionano lo sviluppo software, le reti, i sistemi operativi e la <strong>cybersecurity</strong>.
+                        Sono <strong>Raffaele Raia</strong>, laureato in Informatica con <strong>110/110</strong>
+                        all'<strong>Università degli Studi di Napoli Federico II</strong>. Mi appassionano lo sviluppo
+                        software, le reti, i sistemi operativi e la <strong>cybersecurity</strong>.
                     </p>
                     <p>
-                        Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione di sistema. Ho svolto un tirocinio presso <strong>NTT Data</strong> nel settore Quality Assurance con metodologia BDD.
-                    </p>
-                    <p style="margin-top:24px;">
-                        <span style="font-family:var(--font-mono);font-size:11px;color:var(--olive);letter-spacing:.1em;text-transform:uppercase;">
-                            ▶ Disponibile per collaborazioni e progetti freelance
-                        </span>
+                        Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e
+                        programmazione. Ho svolto un tirocinio presso <strong>NTT Data</strong> nel settore Quality
+                        Assurance con metodologia BDD.
                     </p>
                 </div>
 
@@ -310,13 +293,72 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════
+         FORMAZIONE
+    ═══════════════════════════════════════════════════ -->
+    <section id="formazione">
+        <div class="grid-overlay"></div>
+        <div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;">
+            <div class="section-header reveal">
+                <span class="section-number">02 —</span>
+                <h2 class="section-title">Formazione<em>_Edu</em></h2>
+                <hr class="section-rule">
+            </div>
+
+            <div class="edu-grid">
+                <!-- Laurea -->
+                <div class="edu-card reveal">
+                    <div class="edu-badge">
+                        <i class="ri-graduation-cap-fill"></i>
+                    </div>
+                    <div class="edu-header">
+                        <h3 class="edu-title">Laurea in Informatica</h3>
+                        <span class="edu-date">2022 — 2026</span>
+                    </div>
+                    <p class="edu-org">▸ Università Federico II — Napoli</p>
+                    <div class="edu-score" style="color:var(--olive)">110/110</div>
+                    <ul class="edu-highlights">
+                        <li>Algoritmi e Strutture Dati — implementazione avanzata in C++</li>
+                        <li>Ingegneria del Software — sviluppo collaborativo in team</li>
+                        <li>Lab. Sistemi Operativi — programmazione C e networking</li>
+                        <li>DietiEstates25 — Sistema gestione immobili (Flutter + NestJS)</li>
+                        <li>Street Cats — SPA condivisione avvistamenti gatti (Angular + Express + PostgreSQL)</li>
+                        <li>TicTacToe — Architettura client-server multithread (JavaFX + C + Docker)</li>
+                        <li>MemeMuseum — Museo digitale cultura internet (JavaScript)</li>
+                        <li>FandomWiki — Piattaforma wiki collaborativa (Java)</li>
+                        <li>TelefonoSenzaFili — Simulazione client-server (C)</li>
+                    </ul>
+                </div>
+
+                <!-- Diploma -->
+                <div class="edu-card reveal">
+                    <div class="edu-badge edu-badge--secondary">
+                        <i class="ri-book-open-fill"></i>
+                    </div>
+                    <div class="edu-header">
+                        <h3 class="edu-title">Diploma Elettronica ed Elettrotecnica</h3>
+                        <span class="edu-date">2019 — 2022</span>
+                    </div>
+                    <p class="edu-org">▸ ITIS "E. Majorana" — Somma Vesuviana, NA</p>
+                    <div class="edu-score" style="color:var(--ink-mid)">85/100</div>
+                    <ul class="edu-highlights">
+                        <li>Progettazione PCB con EasyEDA</li>
+                        <li>Disegni tecnici con AutoCAD</li>
+                        <li>Simulazione circuiti con NI Multisim e Tinkercad</li>
+                        <li>Sviluppo software per sistemi embedded (Arduino, ESP32)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
          EXPERIENCE
     ═══════════════════════════════════════════════════ -->
     <section id="experience">
         <div class="grid-overlay"></div>
         <div class="exp-wrap" style="position:relative;z-index:1;">
             <div class="section-header reveal">
-                <span class="section-number">02 —</span>
+                <span class="section-number">03 —</span>
                 <h2 class="section-title">Experience<em>_Log</em></h2>
                 <hr class="section-rule">
             </div>
@@ -332,83 +374,14 @@
                         <p class="exp-org" style="color:var(--amber)">▸ NTT Data — Centro Direzionale, Napoli</p>
                         <ul>
                             <li>Settore: Quality Assurance</li>
-                            <li>Sviluppo architettura di test e casi di test automatizzati con Gherkin (BDD) per cliente bancario</li>
-                            <li>Monitoraggio migrazione applicativa multi-livello: Evento → Splunk → MongoDB → Oracle → API</li>
-                            <li>Automazione test per cliente turistico con scenari BDD e step definition personalizzate</li>
+                            <li>Sviluppo architettura di test e casi di test automatizzati con Gherkin (BDD) per cliente
+                                bancario</li>
+                            <li>Monitoraggio migrazione applicativa multi-livello: Evento → Splunk → MongoDB → Oracle →
+                                API</li>
+                            <li>Automazione test per cliente turistico con scenari BDD e step definition personalizzate
+                            </li>
                             <li>Preparazione ISTQB® Foundation Level e Advanced Level Test Automation Engineering</li>
                             <li>Stack: Rest-Assured, Allure, Extend Report</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="exp-entry reveal">
-                    <div class="exp-dot"></div>
-                    <div class="exp-card">
-                        <div class="exp-meta">
-                            <h3 class="exp-role">Laurea in Informatica</h3>
-                            <span class="exp-date">2022 — 2026</span>
-                        </div>
-                        <p class="exp-org">▸ Università Federico II — Napoli &nbsp;<span style="color:var(--olive);font-weight:700;">110/110</span></p>
-                        <ul>
-                            <li>Algoritmi e Strutture Dati — implementazione avanzata in C++</li>
-                            <li>Ingegneria del Software — sviluppo collaborativo in team</li>
-                            <li>Lab. Sistemi Operativi — programmazione C e networking</li>
-                            <li>DietiEstates25 — Sistema gestione immobili (Flutter + NestJS)</li>
-                            <li>Street Cats — SPA condivisione avvistamenti gatti (Angular + Express + PostgreSQL)</li>
-                            <li>TicTacToe — Architettura client-server multithread (JavaFX + C + Docker)</li>
-                            <li>MemeMuseum — Museo digitale cultura internet (JavaScript)</li>
-                            <li>FandomWiki — Piattaforma wiki collaborativa (Java)</li>
-                            <li>TelefonoSenzaFili — Simulazione client-server (C)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="exp-entry reveal">
-                    <div class="exp-dot"></div>
-                    <div class="exp-card">
-                        <div class="exp-meta">
-                            <h3 class="exp-role">Software Engineer Intern</h3>
-                            <span class="exp-date">TIROCINIO</span>
-                        </div>
-                        <p class="exp-org" style="color:var(--amber)">▸ PRISMA Lab — Federico II, Napoli</p>
-                        <ul>
-                            <li>Stack: C++, Python, ROS 2, Isaac Sim, OpenVR, SteamVR, ALVR</li>
-                            <li>Controllo braccio robotico VR-based e registrazione dati</li>
-                            <li>Nodi ROS2 per streaming dati headset/controller VR a NVIDIA Isaac Sim</li>
-                            <li>Cinematica inversa KUKA LBR iiwa + strumenti di registrazione traiettorie</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="exp-entry reveal">
-                    <div class="exp-dot" style="background:var(--ink-mid);border-color:var(--ink-mid)"></div>
-                    <div class="exp-card">
-                        <div class="exp-meta">
-                            <h3 class="exp-role">Diploma Elettronica ed Elettrotecnica</h3>
-                            <span class="exp-date">2019 — 2022</span>
-                        </div>
-                        <p class="exp-org" style="color:var(--ink-mid)">▸ ITIS "E. Majorana" — Somma Vesuviana, NA &nbsp;<span style="color:var(--ink-mid);font-weight:700;">85/100</span></p>
-                        <ul>
-                            <li>Progettazione PCB con EasyEDA</li>
-                            <li>Disegni tecnici con AutoCAD</li>
-                            <li>Simulazione circuiti con NI Multisim e Tinkercad</li>
-                            <li>Sviluppo software per sistemi embedded (Arduino, ESP32)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="exp-entry reveal">
-                    <div class="exp-dot" style="background:var(--ink-mid);border-color:var(--ink-mid)"></div>
-                    <div class="exp-card">
-                        <div class="exp-meta">
-                            <h3 class="exp-role">Personal Projects</h3>
-                            <span class="exp-date">SIDE QUESTS</span>
-                        </div>
-                        <p class="exp-org" style="color:var(--ink-mid)">▸ Self Employed</p>
-                        <ul>
-                            <li>Pasticceria Giuliano — Sito e-commerce per pasticceria locale</li>
-                            <li>SantoBono Hospital Demo — App gestione sanitaria (Flutter)</li>
-                            <li>LeagueOfBet — Simulazione scommesse esports (Python)</li>
                         </ul>
                     </div>
                 </div>
@@ -423,12 +396,13 @@
     <section id="coding-stats">
         <div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;">
             <div class="section-header reveal">
-                <span class="section-number" style="color:rgba(234,232,213,.4)">03 —</span>
+                <span class="section-number" style="color:rgba(234,232,213,.4)">04 —</span>
                 <h2 class="section-title">Coding<em style="color:var(--olive)">_Stats</em></h2>
                 <hr class="section-rule" style="border-color:rgba(234,232,213,.12)">
                 <div style="margin-left:auto;display:flex;align-items:center;gap:6px;">
                     <div class="status-dot"></div>
-                    <span style="font-family:var(--font-mono);font-size:10px;color:var(--olive);letter-spacing:.1em;text-transform:uppercase;">LIVE</span>
+                    <span
+                        style="font-family:var(--font-mono);font-size:10px;color:var(--olive);letter-spacing:.1em;text-transform:uppercase;">LIVE</span>
                 </div>
             </div>
 
@@ -437,9 +411,11 @@
                 <div class="reveal">
                     <div class="stats-block">
                         <div class="stats-block-header">
-                            <div class="stats-block-icon"><i class="ri-github-fill" style="color:var(--olive)"></i></div>
+                            <div class="stats-block-icon"><i class="ri-github-fill" style="color:var(--olive)"></i>
+                            </div>
                             <span class="stats-block-title">GitHub</span>
-                            <span class="stats-block-status" id="gh-badges-status" style="color:var(--olive);animation:pulse 1.5s infinite">Fetching...</span>
+                            <span class="stats-block-status" id="gh-badges-status"
+                                style="color:var(--olive);animation:pulse 1.5s infinite">Fetching...</span>
                         </div>
 
                         <div style="display:flex;gap:32px;margin-bottom:20px;">
@@ -453,52 +429,38 @@
                             </div>
                         </div>
 
-                        <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(234,232,213,.4);margin-bottom:8px;">
+                        <div
+                            style="font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(234,232,213,.4);margin-bottom:8px;">
                             ▶ Trophy_Room
                         </div>
                         <div class="badge-row">
                             <div class="badges-marquee" id="gh-history-badges">
                                 <div class="badge-item">
-                                    <div class="badge-icon-wrap"><i class="ri-folder-open-fill" style="color:var(--olive)"></i></div>
+                                    <div class="badge-icon-wrap"><i class="ri-folder-open-fill"
+                                            style="color:var(--olive)"></i></div>
                                     <div class="badge-label">Repos</div>
                                 </div>
                                 <div class="badge-item">
-                                    <div class="badge-icon-wrap"><i class="ri-star-fill" style="color:var(--amber)"></i></div>
+                                    <div class="badge-icon-wrap"><i class="ri-star-fill" style="color:var(--amber)"></i>
+                                    </div>
                                     <div class="badge-label">Starred</div>
                                 </div>
                                 <div class="badge-item">
-                                    <div class="badge-icon-wrap"><i class="ri-medal-line" style="color:rgba(234,232,213,.5)"></i></div>
+                                    <div class="badge-icon-wrap"><i class="ri-medal-line"
+                                            style="color:rgba(234,232,213,.5)"></i></div>
                                     <div class="badge-label">Contrib</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="stats-cmd">
-                            <span><span class="prompt" style="color:rgba(234,232,213,.3)">$ </span><span style="color:rgba(234,232,213,.6)">git log --oneline </span><span style="animation:pulse 1s infinite">_</span></span>
+                            <span><span class="prompt" style="color:rgba(234,232,213,.3)">$ </span><span
+                                    style="color:rgba(234,232,213,.6)">git log --oneline </span><span
+                                    style="animation:pulse 1s infinite">_</span></span>
                             <a href="https://github.com/GoldStygian" target="_blank">VIEW GITHUB →</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- LeetCode
-                <div class="reveal">
-                    <div class="stats-block">
-                        <div class="stats-block-header">
-                            <div class="stats-block-icon"><i class="ri-code-s-slash-fill" style="color:var(--amber)"></i></div>
-                            <span class="stats-block-title">LeetCode</span>
-                            <span class="stats-block-status" id="lc-badges-status" style="color:var(--olive);animation:pulse 1.5s infinite">Fetching...</span>
-                        </div>
-
-                        <div class="lc-card-wrap">
-                            <img src="https://leetcard.jacoblin.cool/florindo?theme=dark&font=Ubuntu&ext=heatmap" alt="LeetCode Stats">
-                        </div>
-
-                        <div class="stats-cmd">
-                            <span><span class="prompt" style="color:rgba(234,232,213,.3)">$ </span><span style="color:rgba(234,232,213,.6)">leetcode --user florindo </span><span style="animation:pulse 1s infinite">_</span></span>
-                            <a href="https://leetcode.com/u/florindo/" target="_blank">VIEW LC →</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -510,7 +472,7 @@
         <div class="grid-overlay"></div>
         <div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;">
             <div class="section-header reveal">
-                <span class="section-number">04 —</span>
+                <span class="section-number">05 —</span>
                 <h2 class="section-title">Selected<em> Works</em></h2>
                 <hr class="section-rule">
             </div>
@@ -519,12 +481,15 @@
 
                 <article class="proj-card reveal">
                     <div class="proj-thumb" style="background:#1a1a2e;">
-                        <video src="Assets/videos/robotic_arm.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;opacity:.8"></video>
+                        <video src="Assets/videos/robotic_arm.mp4" autoplay loop muted playsinline
+                            style="width:100%;height:100%;object-fit:cover;opacity:.8"></video>
                         <span class="proj-tag">PROJECT_VID</span>
                     </div>
                     <div class="proj-body">
                         <h3 class="proj-title">VR-Isaac Recorder</h3>
-                        <p class="proj-desc">Controllo braccio robotico VR-based. Trasmette dati OpenVR a NVIDIA Isaac Sim via ROS2 con cinematica inversa KUKA LBR, registrando traiettorie guidate dall'uomo per il robotic learning.</p>
+                        <p class="proj-desc">Controllo braccio robotico VR-based. Trasmette dati OpenVR a NVIDIA Isaac
+                            Sim via ROS2 con cinematica inversa KUKA LBR, registrando traiettorie guidate dall'uomo per
+                            il robotic learning.</p>
                         <div class="proj-tags">
                             <span class="proj-tech">C++</span>
                             <span class="proj-tech">Python</span>
@@ -542,12 +507,14 @@
 
                 <article class="proj-card reveal">
                     <div class="proj-thumb" style="background:#1a0a0a;">
-                        <video src="Assets/videos/cluster.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;opacity:.8"></video>
+                        <video src="Assets/videos/cluster.mp4" autoplay loop muted playsinline
+                            style="width:100%;height:100%;object-fit:cover;opacity:.8"></video>
                         <span class="proj-tag">PROJECT_VID</span>
                     </div>
                     <div class="proj-body">
                         <h3 class="proj-title">RacingDNA</h3>
-                        <p class="proj-desc">Piattaforma Deep Learning &amp; statistiche racing con analisi e visualizzazione dati. ⭐ 3 stelle su GitHub.</p>
+                        <p class="proj-desc">Piattaforma Deep Learning &amp; statistiche racing con analisi e
+                            visualizzazione dati. ⭐ 3 stelle su GitHub.</p>
                         <div class="proj-tags">
                             <span class="proj-tech">Python</span>
                             <span class="proj-tech">PyTorch</span>
@@ -571,7 +538,8 @@
                     </div>
                     <div class="proj-body">
                         <h3 class="proj-title">Street Cats</h3>
-                        <p class="proj-desc">SPA per la condivisione di avvistamenti di gatti randagi. Mappa interattiva, autenticazione, upload immagini, markdown e test E2E con Playwright.</p>
+                        <p class="proj-desc">SPA per la condivisione di avvistamenti di gatti randagi. Mappa
+                            interattiva, autenticazione, upload immagini, markdown e test E2E con Playwright.</p>
                         <div class="proj-tags">
                             <span class="proj-tech">Angular</span>
                             <span class="proj-tech">TypeScript</span>
@@ -597,7 +565,8 @@
                     </div>
                     <div class="proj-body">
                         <h3 class="proj-title">MemeMuseum</h3>
-                        <p class="proj-desc">Museo digitale della cultura internet. Una web app divertente per esplorare e catalogare meme.</p>
+                        <p class="proj-desc">Museo digitale della cultura internet. Una web app divertente per esplorare
+                            e catalogare meme.</p>
                         <div class="proj-tags">
                             <span class="proj-tech">JavaScript</span>
                             <span class="proj-tech">Web App</span>
@@ -620,7 +589,8 @@
                     </div>
                     <div class="proj-body">
                         <h3 class="proj-title">NNDL</h3>
-                        <p class="proj-desc">Neural Networks &amp; Deep Learning — implementazioni FCNN e CNN con PyTorch. ⭐ 2 stelle su GitHub.</p>
+                        <p class="proj-desc">Neural Networks &amp; Deep Learning — implementazioni FCNN e CNN con
+                            PyTorch. ⭐ 2 stelle su GitHub.</p>
                         <div class="proj-tags">
                             <span class="proj-tech">Python</span>
                             <span class="proj-tech">PyTorch</span>
@@ -643,7 +613,8 @@
                     </div>
                     <div class="proj-body">
                         <h3 class="proj-title">TicTacToe</h3>
-                        <p class="proj-desc">Architettura client-server multithread per partite TicTacToe. Client JavaFX, server C con PThread, comunicazione command-based e distribuzione Docker.</p>
+                        <p class="proj-desc">Architettura client-server multithread per partite TicTacToe. Client
+                            JavaFX, server C con PThread, comunicazione command-based e distribuzione Docker.</p>
                         <div class="proj-tags">
                             <span class="proj-tech">C</span>
                             <span class="proj-tech">Java</span>
@@ -690,45 +661,55 @@
                     <div class="report-accent" style="background:var(--olive)"></div>
                     <div class="report-id" style="color:var(--olive)">REPORT_001.log</div>
                     <div class="report-from">FROM: Student @ L J University</div>
-                    <p class="report-quote">"Arham proved no matter how much pressure or little time there is, he always delivers projects outstandingly."</p>
+                    <p class="report-quote">"Arham proved no matter how much pressure or little time there is, he always
+                        delivers projects outstandingly."</p>
                     <div class="report-stars" style="color:var(--olive)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--amber)"></div>
                     <div class="report-id" style="color:var(--amber)">REPORT_002.log</div>
                     <div class="report-from">FROM: Dev @ OpenSource</div>
-                    <p class="report-quote">"The depth of his PyTorch implementations shows a true understanding of the underlying mathematics."</p>
+                    <p class="report-quote">"The depth of his PyTorch implementations shows a true understanding of the
+                        underlying mathematics."</p>
                     <div class="report-stars" style="color:var(--amber)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--red)"></div>
                     <div class="report-id" style="color:var(--red)">REPORT_003.log</div>
                     <div class="report-from">FROM: Reviewer @ GitHub</div>
-                    <p class="report-quote">"Cleanest code I've seen in years. He knows how to handle complex state management."</p>
+                    <p class="report-quote">"Cleanest code I've seen in years. He knows how to handle complex state
+                        management."</p>
                     <div class="report-stars" style="color:var(--red)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:rgba(234,232,213,.4)"></div>
                     <div class="report-id" style="color:rgba(234,232,213,.5)">REPORT_004.log</div>
                     <div class="report-from">FROM: Dev @ CreativeChaos</div>
-                    <p class="report-quote">"The attention to detail in the architecture is flawless. A master of his craft."</p>
+                    <p class="report-quote">"The attention to detail in the architecture is flawless. A master of his
+                        craft."</p>
                     <div class="report-stars" style="color:rgba(234,232,213,.4)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--olive)"></div>
                     <div class="report-id" style="color:var(--olive)">REPORT_005.log</div>
                     <div class="report-from">FROM: UX Designer @ TechFlow</div>
-                    <p class="report-quote">"Highly intuitive UX. Delivered exactly what we needed before we even knew we needed it."</p>
+                    <p class="report-quote">"Highly intuitive UX. Delivered exactly what we needed before we even knew
+                        we needed it."</p>
                     <div class="report-stars" style="color:var(--olive)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <!-- Duplicated for seamless loop -->
@@ -736,45 +717,55 @@
                     <div class="report-accent" style="background:var(--olive)"></div>
                     <div class="report-id" style="color:var(--olive)">REPORT_001.log</div>
                     <div class="report-from">FROM: Student @ L J University</div>
-                    <p class="report-quote">"Arham proved no matter how much pressure or little time there is, he always delivers projects outstandingly."</p>
+                    <p class="report-quote">"Arham proved no matter how much pressure or little time there is, he always
+                        delivers projects outstandingly."</p>
                     <div class="report-stars" style="color:var(--olive)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--amber)"></div>
                     <div class="report-id" style="color:var(--amber)">REPORT_002.log</div>
                     <div class="report-from">FROM: Dev @ OpenSource</div>
-                    <p class="report-quote">"The depth of his PyTorch implementations shows a true understanding of the underlying mathematics."</p>
+                    <p class="report-quote">"The depth of his PyTorch implementations shows a true understanding of the
+                        underlying mathematics."</p>
                     <div class="report-stars" style="color:var(--amber)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--red)"></div>
                     <div class="report-id" style="color:var(--red)">REPORT_003.log</div>
                     <div class="report-from">FROM: Reviewer @ GitHub</div>
-                    <p class="report-quote">"Cleanest code I've seen in years. He knows how to handle complex state management."</p>
+                    <p class="report-quote">"Cleanest code I've seen in years. He knows how to handle complex state
+                        management."</p>
                     <div class="report-stars" style="color:var(--red)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:rgba(234,232,213,.4)"></div>
                     <div class="report-id" style="color:rgba(234,232,213,.5)">REPORT_004.log</div>
                     <div class="report-from">FROM: Dev @ CreativeChaos</div>
-                    <p class="report-quote">"The attention to detail in the architecture is flawless. A master of his craft."</p>
+                    <p class="report-quote">"The attention to detail in the architecture is flawless. A master of his
+                        craft."</p>
                     <div class="report-stars" style="color:rgba(234,232,213,.4)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--olive)"></div>
                     <div class="report-id" style="color:var(--olive)">REPORT_005.log</div>
                     <div class="report-from">FROM: UX Designer @ TechFlow</div>
-                    <p class="report-quote">"Highly intuitive UX. Delivered exactly what we needed before we even knew we needed it."</p>
+                    <p class="report-quote">"Highly intuitive UX. Delivered exactly what we needed before we even knew
+                        we needed it."</p>
                     <div class="report-stars" style="color:var(--olive)">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
             </div>
@@ -800,7 +791,7 @@
                     </p>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="ri-mail-line"></i></div>
-                        <a href="mailto:raffaele.raia.work@gmail.com">raffaele.raia.work@gmail.com</a>
+                        <a class="data.socials.email" href="#"></a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
@@ -808,11 +799,11 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="ri-github-fill"></i></div>
-                        <a href="https://github.com/GoldStygian" target="_blank">GoldStygian</a>
+                        <a class="data.socials.github.url" href="#" target="_blank">GitHub</a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="ri-linkedin-box-fill"></i></div>
-                        <a href="https://www.linkedin.com/in/raffaeleraia/" target="_blank">Raffaele Raia</a>
+                        <a class="data.socials.linkedin.url" href="#" target="_blank">LinkedIn</a>
                     </div>
                 </div>
 
@@ -831,7 +822,8 @@
                         </div>
                         <div class="form-field">
                             <label class="form-label">Trasmissione</label>
-                            <textarea name="message" class="form-textarea" rows="4" placeholder="DETTAGLI DEL PROGETTO..." required></textarea>
+                            <textarea name="message" class="form-textarea" rows="4"
+                                placeholder="DETTAGLI DEL PROGETTO..." required></textarea>
                         </div>
                         <button type="submit" class="form-btn" id="submit-btn">▶ TRASMETTI DATI</button>
                     </form>
@@ -846,34 +838,29 @@
     <footer>
         <div class="footer-inner">
             <div>
-                <div class="footer-brand">Raffaele Raia</div>
-                <div class="footer-tagline">CS Graduate & Developer<br>Università Federico II — 110/110<br>Python · C++ · Java · TypeScript · Angular · Cybersecurity</div>
+                <div class="footer-brand data.name">Raffaele Raia</div>
+                <div class="footer-tagline">CS Graduate & Developer<br>Università Federico II — 110/110<br>Python · C++
+                    · Java · TypeScript · Angular · Cybersecurity</div>
                 <div class="footer-social">
-                    <a href="https://github.com/GoldStygian" target="_blank" class="social-btn"><i class="ri-github-fill"></i></a>
-                    <a href="https://www.linkedin.com/in/raffaeleraia/" target="_blank" class="social-btn"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="https://huggingface.co/GoldStygian" target="_blank" class="social-btn"><i class="ri-robot-fill"></i></a>
-                    <a href="mailto:raffaele.raia.work@gmail.com" class="social-btn"><i class="ri-mail-line"></i></a>
+                    <a href="#" target="_blank" class="social-btn data.socials.github.url"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="#" target="_blank" class="social-btn data.socials.linkedin.url"><i
+                            class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" target="_blank" class="social-btn data.socials.huggingface.url"><i
+                            class="ri-robot-fill"></i></a>
+                    <a href="#" class="social-btn data.socials.email"><i class="ri-mail-line"></i></a>
                 </div>
             </div>
 
             <div class="footer-col">
                 <div class="footer-col-title">Sezioni</div>
                 <a href="#about">/About</a>
+                <a href="#formazione">/Formazione</a>
                 <a href="#experience">/Experience</a>
                 <a href="#projects">/Projects</a>
                 <a href="#coding-stats">/Stats</a>
                 <a href="#reports">/Reports</a>
                 <a href="#contact">/Contact</a>
-            </div>
-
-            <div class="footer-col">
-                <div class="footer-col-title">Tecnologie</div>
-                <a href="#">Python · C++ · Java · C · TypeScript</a>
-                <a href="#">Angular · Django · Express · Flutter</a>
-                <a href="#">PyTorch · Deep Learning</a>
-                <a href="#">PostgreSQL · Docker · Linux · Git</a>
-                <a href="#">Playwright · Cybersecurity · Postman</a>
-                <a href="#">Azure · Figma · LaTeX · Bash</a>
             </div>
         </div>
 
@@ -889,4 +876,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

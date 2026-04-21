@@ -2,7 +2,7 @@
 const cursor = document.getElementById('cursor');
 document.addEventListener('mousemove', e => {
     cursor.style.left = e.clientX + 'px';
-    cursor.style.top  = e.clientY  + 'px';
+    cursor.style.top = e.clientY + 'px';
 });
 document.querySelectorAll('a, button, input, textarea, [class*="cursor"]').forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
@@ -20,12 +20,12 @@ const revealEls = document.querySelectorAll('.reveal');
 new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
 }, { threshold: 0.08 }).observe
-? (() => {
-    const obs = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
-    }, { threshold: 0.08 });
-    revealEls.forEach(el => obs.observe(el));
-})() : revealEls.forEach(el => el.classList.add('active'));
+    ? (() => {
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.08 });
+        revealEls.forEach(el => obs.observe(el));
+    })() : revealEls.forEach(el => el.classList.add('active'));
 
 // Contact form — Web3Forms
 async function handleSubmit(e) {
@@ -90,8 +90,8 @@ async function fetchGitHubStats() {
 
         const badges = [];
         if (data.public_repos >= 10) badges.push({ name: '10+ Repos', icon: 'ri-folder-open-fill', color: 'var(--olive)' });
-        if (data.public_repos >= 5)  badges.push({ name: 'Active Dev', icon: 'ri-terminal-fill', color: 'var(--amber)' });
-        if (data.followers > 0)       badges.push({ name: 'Followed', icon: 'ri-user-heart-fill', color: 'var(--red)' });
+        if (data.public_repos >= 5) badges.push({ name: 'Active Dev', icon: 'ri-terminal-fill', color: 'var(--amber)' });
+        if (data.followers > 0) badges.push({ name: 'Followed', icon: 'ri-user-heart-fill', color: 'var(--red)' });
         badges.push({ name: 'Contributor', icon: 'ri-medal-line', color: 'rgba(234,232,213,.6)' });
 
         const repeated = [...badges, ...badges, ...badges, ...badges];
@@ -107,3 +107,55 @@ async function fetchGitHubStats() {
     }
 }
 fetchGitHubStats();
+
+// ══════════════════════════════════════════════════════════════
+//  Sostituzione automatica — Cerca classi "data.x.y.z",
+//  risolve il percorso nell'oggetto DATA, e sostituisce il contenuto.
+//
+//  Uso nell'HTML:
+//    <span class="data.name">testo da sostituire</span>
+//    <a class="data.socials.github.url" href="">link</a>
+// ══════════════════════════════════════════════════════════════
+function replaceContent() {
+    // Trova tutti gli elementi che hanno almeno una classe che inizia con "data."
+    document.querySelectorAll('[class*="data."]').forEach(el => {
+        el.classList.forEach(cls => {
+            if (!cls.startsWith('data.')) return;
+
+            // Risolvi il percorso: "data.socials.github.url" → DATA.socials.github.url
+            const path = cls.substring(5).split('.'); // rimuovi "data." e splitta
+            let value = DATA;
+            for (const key of path) {
+                if (value == null) return;
+                value = value[key];
+            }
+            if (value == null) return;
+
+            // Se è un <a>: setta href (con mailto: per email)
+            if (el.tagName === 'A') {
+                if (typeof value === 'string' && value.includes('@')) {
+                    el.href = 'mailto:' + value;
+                    el.textContent = value;
+                } else {
+                    el.href = value;
+                }
+            } else {
+                // Per tutti gli altri elementi: setta il testo
+                el.textContent = value;
+            }
+        });
+    });
+}
+
+// ── Ticker — genera gli span da DATA.tech_stack ──
+(function renderTicker() {
+    const items = [
+        ...DATA.tech_stack.languages,
+        ...DATA.tech_stack.frameworks,
+        ...DATA.tech_stack.tools,
+    ];
+    const spans = items.map(t => `<span>${t} <span class="ticker-dot">✦</span></span>`).join('');
+    document.getElementById('ticker-content').innerHTML = spans + spans; // duplicato per loop seamless
+})();
+
+replaceContent();
