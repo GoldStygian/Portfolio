@@ -181,4 +181,104 @@ function replaceContent() {
     if (badge) badge.textContent = `${total} nodes loaded`;
 })();
 
+// ── Hero Terminal Animation ───────────────────────────────────────
+(function initHeroTerminal() {
+    const body = document.getElementById('hero-term-body');
+    if (!body) return;
+
+    // Each entry: { html, delay (ms from previous line) }
+    const SCENE = [
+        { html: '<span class="ht-line" style="color:#555">GNU/Linux — Federico II Build</span>', delay: 0 },
+        { html: '<span class="ht-line" style="color:#555">Kernel 6.6.10-arch1-1 on x86_64</span>', delay: 300 },
+        { html: '<span class="ht-line"> </span>', delay: 200 },
+        { html: '<span class="ht-line"><span class="ht-ok">[ OK ]</span> Started udev Coldplug Helpers.</span>', delay: 500 },
+        { html: '<span class="ht-line"><span class="ht-ok">[ OK ]</span> Found device /dev/sda1.</span>', delay: 320 },
+        { html: '<span class="ht-line"><span class="ht-ok">[ OK ]</span> Reached target Local File Systems.</span>', delay: 320 },
+        { html: '<span class="ht-line"><span class="ht-ok">[ OK ]</span> Started Network Manager.</span>', delay: 320 },
+        { html: '<span class="ht-line"><span class="ht-ok">[ OK ]</span> <span class="ht-knowledge">AI-Module: Base Knowledge Loaded.</span></span>', delay: 600 },
+        { html: '<span class="ht-line"><span class="ht-ok">[ OK ]</span> <span class="ht-knowledge">NLP-Engine: Natural Language Activated.</span></span>', delay: 420 },
+        { html: '<span class="ht-line"> </span>', delay: 300 },
+        { html: '<span class="ht-line" style="color:#e2c97e">Welcome back, r4ff4. System operational.</span>', delay: 700 },
+        { html: '<span class="ht-line"> </span>', delay: 200 },
+        { html: '<span class="ht-line" id="ht-cmd1"><span class="ht-user">r4ff4</span><span style="color:#888">@</span><span class="ht-prompt">federico-ii</span><span style="color:#888">:~$</span> </span>', delay: 800 },
+        { html: null, type: 'type', target: 'ht-cmd1', text: 'cat ~/me.txt', delay: 400 },
+        { html: '<span class="ht-line ht-output">Hi, I\'m Raffaele — CS Graduate 110/110</span>', delay: 1200 },
+        { html: '<span class="ht-line ht-output">Federico II, Napoli · Open to Collaborate</span>', delay: 180 },
+        { html: '<span class="ht-line"> </span>', delay: 200 },
+        { html: '<span class="ht-line" id="ht-cmd2"><span class="ht-user">r4ff4</span><span style="color:#888">@</span><span class="ht-prompt">federico-ii</span><span style="color:#888">:~$</span> </span>', delay: 700 },
+        { html: null, type: 'type', target: 'ht-cmd2', text: 'neofetch', delay: 400 },
+        { html: '<span class="ht-line ht-output">OS: Federico II Linux x86_64</span>', delay: 900 },
+        { html: '<span class="ht-line ht-output">Languages: Python · C++ · Java · JS</span>', delay: 200 },
+        { html: '<span class="ht-line ht-output">Stack: Angular · Django · Flutter</span>', delay: 200 },
+        { html: '<span class="ht-line ht-output">Degree: 110/110 — Computer Science</span>', delay: 200 },
+        { html: '<span class="ht-line"> </span>', delay: 300 },
+        { html: '<span class="ht-line" id="ht-cmd3"><span class="ht-user">r4ff4</span><span style="color:#888">@</span><span class="ht-prompt">federico-ii</span><span style="color:#888">:~$</span> </span>', delay: 700 },
+        { html: null, type: 'type', target: 'ht-cmd3', text: 'clear', delay: 400 },
+    ];
+
+    let timers = [];
+
+    function typeInto(el, text, speed, onDone) {
+        let i = 0;
+        const cursor = document.createElement('span');
+        cursor.className = 'ht-cursor';
+        el.appendChild(cursor);
+
+        function tick() {
+            if (i < text.length) {
+                cursor.insertAdjacentText('beforebegin', text[i]);
+                i++;
+                const t = setTimeout(tick, speed + Math.random() * 30);
+                timers.push(t);
+            } else {
+                cursor.remove();
+                if (onDone) onDone();
+            }
+        }
+        const t = setTimeout(tick, 0);
+        timers.push(t);
+    }
+
+    function run() {
+        body.innerHTML = '';
+        timers.forEach(clearTimeout);
+        timers = [];
+
+        let elapsed = 0;
+
+        SCENE.forEach((entry, idx) => {
+            elapsed += entry.delay;
+            const t = setTimeout(() => {
+
+                // CLEAR action — erase and restart after a pause
+                if (entry.type === 'type' && entry.text === 'clear') {
+                    const cmdEl = document.getElementById(entry.target);
+                    if (cmdEl) typeInto(cmdEl, entry.text, 90, () => {
+                        const restartTimer = setTimeout(() => {
+                            run();
+                        }, 1200);
+                        timers.push(restartTimer);
+                    });
+                    return;
+                }
+
+                if (entry.type === 'type') {
+                    const cmdEl = document.getElementById(entry.target);
+                    if (cmdEl) typeInto(cmdEl, entry.text, 90);
+                    return;
+                }
+
+                body.insertAdjacentHTML('beforeend', entry.html);
+
+                // keep scroll at bottom
+                body.scrollTop = body.scrollHeight;
+
+            }, elapsed);
+            timers.push(t);
+        });
+    }
+
+    run();
+})();
+
 replaceContent();

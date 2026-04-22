@@ -33,15 +33,16 @@
                 email: "raffaele.raia.work@gmail.com",
             },
             tech_stack: {
-                LANG:    ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart"],
+                LANG:    ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart","HTML", "CSS"],
                 WEB:     ["Angular", "Django", "Express"],
+                TOOLS:   ["Makefile", "Valgrind", "Postman"],
+                OS:      ["Ubuntu", "Fedora", "Windows"],
                 MOBILE:  ["Flutter"],
                 DB:      ["PostgreSQL"],
                 OPS:     ["Docker"],
                 CLOUD:   ["Azure"],
-                OS:      ["Linux", "Windows"],
                 TEST:    ["Playwright"],
-                DOCS:    ["LaTeX"],
+                DOCS:    ["LaTeX", "Markdown"],
                 VERSION: ["Git"],
                 DESIGN:  ["Figma"],
             }
@@ -98,47 +99,65 @@
         <div class="hero-bg-text">Code</div>
 
         <div class="hero-inner">
-            <div class="hero-eyebrow">
-                SYSTEM_STATUS: ONLINE &nbsp;—&nbsp; CS GRADUATE &amp; DEVELOPER
-            </div>
-            <h1 class="hero-headline reveal">
-                Software<br>
-                <em>Engineer</em>
-            </h1>
-            <hr class="hero-rule">
-            <p class="hero-deck reveal">
-                Designing neural networks and architecting software<br>
-                that learns and scales.<br>
-            </p>
+            <!-- Left column -->
+            <div class="hero-left">
+                <div class="hero-eyebrow">
+                    SYSTEM_STATUS: ONLINE &nbsp;—&nbsp; CS GRADUATE &amp; DEVELOPER
+                </div>
+                <h1 class="hero-headline reveal">
+                    Software<br>
+                    <em>Engineer</em>
+                </h1>
+                <hr class="hero-rule">
+                <p class="hero-deck reveal">
+                    Designing neural networks and architecting software<br>
+                    that learns and scales.<br>
+                </p>
 
-            <div class="hero-links reveal">
-                <a href="#" target="_blank" class="hero-link primary data.socials.github.url">
-                    <i class="ri-github-fill"></i> GitHub
-                </a>
-                <a href="#" target="_blank" class="hero-link data.socials.linkedin.url">
-                    <i class="ri-linkedin-box-fill"></i> LinkedIn
-                </a>
-                <a href="#contact" class="hero-link">
-                    <i class="ri-mail-send-line"></i> Contattami
-                </a>
+                <div class="hero-links reveal">
+                    <a href="#" target="_blank" class="hero-link primary data.socials.github.url">
+                        <i class="ri-github-fill"></i> GitHub
+                    </a>
+                    <a href="#" target="_blank" class="hero-link data.socials.linkedin.url">
+                        <i class="ri-linkedin-box-fill"></i> LinkedIn
+                    </a>
+                    <a href="#contact" class="hero-link">
+                        <i class="ri-mail-send-line"></i> Contattami
+                    </a>
+                </div>
+
+                <div class="hero-stats reveal">
+                    <div>
+                        <div class="hero-stat-label">▶ Posizione</div>
+                        <div class="hero-stat-value" style="font-size:18px;line-height:1.3">Napoli<br>Italia</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-label">▶ Laurea</div>
+                        <div class="hero-stat-value" style="font-size:18px;line-height:1.3">110/110<br>Federico II</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-label">▶ Repos Pubblici</div>
+                        <div class="hero-stat-value" id="stat-repos">—</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-label">▶ Status</div>
+                        <div class="hero-stat-value" style="font-size:14px;color:var(--olive)">Open to<br>Collaborate</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="hero-stats reveal">
-                <div>
-                    <div class="hero-stat-label">▶ Posizione</div>
-                    <div class="hero-stat-value" style="font-size:18px;line-height:1.3">Napoli<br>Italia</div>
-                </div>
-                <div>
-                    <div class="hero-stat-label">▶ Laurea</div>
-                    <div class="hero-stat-value" style="font-size:18px;line-height:1.3">110/110<br>Federico II</div>
-                </div>
-                <div>
-                    <div class="hero-stat-label">▶ Repos Pubblici</div>
-                    <div class="hero-stat-value" id="stat-repos">—</div>
-                </div>
-                <div>
-                    <div class="hero-stat-label">▶ Status</div>
-                    <div class="hero-stat-value" style="font-size:14px;color:var(--olive)">Open to<br>Collaborate</div>
+            <!-- Right column: terminal animation -->
+            <div class="hero-right reveal">
+                <div class="hero-terminal" id="hero-terminal">
+                    <div class="hero-term-bar">
+                        <div class="hero-term-dots">
+                            <span style="background:#ff5f57"></span>
+                            <span style="background:#ffbd2e"></span>
+                            <span style="background:#28ca41"></span>
+                        </div>
+                        <span class="hero-term-title">r4ff4@federico-ii: ~</span>
+                    </div>
+                    <div class="hero-term-body" id="hero-term-body"></div>
                 </div>
             </div>
         </div>
