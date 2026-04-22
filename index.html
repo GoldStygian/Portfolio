@@ -18,27 +18,34 @@
          PORTFOLIO DATA
     ══════════════════════════════════════════════════════════════ -->
     <script>
-    const DATA = {
-        name: "Raffaele Raia",
-        tagline: "CS Graduate & Developer",
-        location: { city: "Napoli", country: "Italia" },
-        university: {
-            full: "Università degli Studi di Napoli Federico II",
-            short: "Federico II",
-        },
-        degree: { score: "110/110" },
-        socials: {
-            github:      { url: "https://github.com/GoldStygian", username: "GoldStygian", repos: "https://github.com/GoldStygian?tab=repositories" },
-            linkedin:    { url: "https://www.linkedin.com/in/raffaeleraia/", label: "Raffaele Raia" },
-            email:       "raffaele.raia.work@gmail.com",
-        },
-        tech_stack: {
-            os: ["Linux", "Windows"],
-            languages: ["Python", "C", "C++", "Java", "TypeScript"],
-            frameworks: ["Angular", "Django", "Express", "Flutter"],
-            tools: ["PostgreSQL", "Docker", "Git", "Selenium", "Postman", "Azure", "Figma", "LaTeX", "Bash"],
-        }
-    };
+        const DATA = {
+            name: "Raffaele Raia",
+            tagline: "CS Graduate & Developer",
+            location: { city: "Napoli", country: "Italia" },
+            university: {
+                full: "Università degli Studi di Napoli Federico II",
+                short: "Federico II",
+            },
+            degree: { score: "110/110" },
+            socials: {
+                github: { url: "https://github.com/GoldStygian", username: "GoldStygian", repos: "https://github.com/GoldStygian?tab=repositories" },
+                linkedin: { url: "https://www.linkedin.com/in/raffaeleraia/", label: "Raffaele Raia" },
+                email: "raffaele.raia.work@gmail.com",
+            },
+            tech_stack: {
+                LANG:    ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart"],
+                WEB:     ["Angular", "Django", "Express"],
+                MOBILE:  ["Flutter"],
+                DB:      ["PostgreSQL"],
+                OPS:     ["Docker"],
+                CLOUD:   ["Azure"],
+                OS:      ["Linux", "Windows"],
+                TEST:    ["Playwright"],
+                DOCS:    ["LaTeX"],
+                VERSION: ["Git"],
+                DESIGN:  ["Figma"],
+            }
+        };
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,7 +154,7 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════
-         TICKER STRIP
+         TICKER STRIP (Striscia scorrevole)
     ═══════════════════════════════════════════════════ -->
     <div class="ticker-strip">
         <div class="ticker-content" id="ticker-content"></div>
@@ -182,108 +189,11 @@
                     <div class="skills-panel">
                         <div class="skills-panel-header">
                             <span>▶ SKILL_MATRIX.log</span>
-                            <span style="color:var(--olive)">32 nodes loaded</span>
+                            <span style="color:var(--olive)" id="skills-node-count">… nodes loading</span>
                         </div>
-                        <div class="skills-grid">
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">Python</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">C++</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">Java</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">C</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">JavaScript</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">TypeScript</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ LANG</div>
-                                <div class="skill-name">Dart</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ AI/ML</div>
-                                <div class="skill-name">PyTorch</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ AI/ML</div>
-                                <div class="skill-name">Deep Learning</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ WEB</div>
-                                <div class="skill-name">Angular</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ WEB</div>
-                                <div class="skill-name">Django</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ WEB</div>
-                                <div class="skill-name">Express</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ MOBILE</div>
-                                <div class="skill-name">Flutter</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ ROBOT</div>
-                                <div class="skill-name">ROS 2</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ ROBOT</div>
-                                <div class="skill-name">Isaac Sim</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ DB</div>
-                                <div class="skill-name">PostgreSQL</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ OPS</div>
-                                <div class="skill-name">Docker</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ CLOUD</div>
-                                <div class="skill-name">Azure</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ OS</div>
-                                <div class="skill-name">Linux</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ TEST</div>
-                                <div class="skill-name">Playwright</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ DOCS</div>
-                                <div class="skill-name">LaTeX</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ VERSION</div>
-                                <div class="skill-name">Git</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ DESIGN</div>
-                                <div class="skill-name">Figma</div>
-                            </div>
-                            <div class="skill-cell">
-                                <div class="skill-cat">&gt;_ DOCS</div>
-                                <div class="skill-name">LaTeX</div>
-                            </div>
-                        </div>
+                        <div class="skills-body" id="skills-body"></div>
                         <div class="cmd-bar">
-                            <span><span class="cursor-icon">▶</span> skills --list --all</span>
+                            <span><span class="cursor-icon">▶</span> skills --list --grouped</span>
                             <span><span class="cmd-key">Tab</span> Expand</span>
                         </div>
                     </div>
@@ -317,15 +227,32 @@
                     <p class="edu-org">▸ Università Federico II — Napoli</p>
                     <div class="edu-score" style="color:var(--olive)">110/110</div>
                     <ul class="edu-highlights">
-                        <li>Algoritmi e Strutture Dati — implementazione avanzata in C++</li>
-                        <li>Ingegneria del Software — sviluppo collaborativo in team</li>
-                        <li>Lab. Sistemi Operativi — programmazione C e networking</li>
-                        <li>DietiEstates25 — Sistema gestione immobili (Flutter + NestJS)</li>
-                        <li>Street Cats — SPA condivisione avvistamenti gatti (Angular + Express + PostgreSQL)</li>
-                        <li>TicTacToe — Architettura client-server multithread (JavaFX + C + Docker)</li>
-                        <li>MemeMuseum — Museo digitale cultura internet (JavaScript)</li>
-                        <li>FandomWiki — Piattaforma wiki collaborativa (Java)</li>
-                        <li>TelefonoSenzaFili — Simulazione client-server (C)</li>
+                        <li class="edu-area-title">Informatica &amp; Ing. del Software</li>
+                        <li>Ingegneria del Software <span class="edu-cfu">10 CFU</span></li>
+                        <li>Programmazione <span class="edu-cfu">9 CFU</span></li>
+                        <li>Algoritmi e Strutture Dati I <span class="edu-cfu">9 CFU</span></li>
+                        <li>Basi di Dati I <span class="edu-cfu">9 CFU</span></li>
+                        <li>Object Orientation <span class="edu-cfu">6 CFU</span></li>
+                        <li>Linguaggi di Programmazione I <span class="edu-cfu">6 CFU</span></li>
+                        <li>Tecnologie Web <span class="edu-cfu">6 CFU</span></li>
+                        <li>Laboratorio di Programmazione <span class="edu-cfu">6 CFU</span></li>
+                        <li>Laboratorio di Algoritmi e Strutture Dati <span class="edu-cfu">6 CFU</span></li>
+                        <li>Elementi di Informatica Teorica <span class="edu-cfu">6 CFU</span></li>
+
+                        <li class="edu-area-title">Sistemi, Reti &amp; Architetture</li>
+                        <li>Sistemi Operativi I <span class="edu-cfu">9 CFU</span></li>
+                        <li>Laboratorio di Sistemi Operativi <span class="edu-cfu">9 CFU</span></li>
+                        <li>Architettura degli Elaboratori <span class="edu-cfu">9 CFU</span></li>
+                        <li>Reti di Calcolatori I <span class="edu-cfu">6 CFU</span></li>
+                        <li>Parallel and Distributed Computing <span class="edu-cfu">6 CFU</span></li>
+
+                        <li class="edu-area-title">Matematica, Fisica &amp; Gestionale</li>
+                        <li>Analisi Matematica I <span class="edu-cfu">9 CFU</span></li>
+                        <li>Algebra <span class="edu-cfu">9 CFU</span></li>
+                        <li>Calcolo delle Probabilità e Statistica <span class="edu-cfu">9 CFU</span></li>
+                        <li>Geometria <span class="edu-cfu">6 CFU</span></li>
+                        <li>Fisica Generale I <span class="edu-cfu">6 CFU</span></li>
+                        <li>Economia ed Organizzazione Aziendale <span class="edu-cfu">6 CFU</span></li>
                     </ul>
                 </div>
 
@@ -477,159 +404,167 @@
                 <hr class="section-rule">
             </div>
 
-            <div class="projects-grid">
+            <!-- University projects timeline -->
+            <div class="uni-timeline reveal">
+                <div class="uni-timeline-label">
+                    <i class="ri-graduation-cap-fill"></i>
+                    <span>Federico II — Progetti di Corso</span>
+                    <span class="uni-timeline-count">6 projects</span>
+                </div>
 
-                <article class="proj-card reveal">
-                    <div class="proj-thumb" style="background:#1a1a2e;">
-                        <video src="Assets/videos/robotic_arm.mp4" autoplay loop muted playsinline
-                            style="width:100%;height:100%;object-fit:cover;opacity:.8"></video>
-                        <span class="proj-tag">PROJECT_VID</span>
-                    </div>
-                    <div class="proj-body">
-                        <h3 class="proj-title">VR-Isaac Recorder</h3>
-                        <p class="proj-desc">Controllo braccio robotico VR-based. Trasmette dati OpenVR a NVIDIA Isaac
-                            Sim via ROS2 con cinematica inversa KUKA LBR, registrando traiettorie guidate dall'uomo per
-                            il robotic learning.</p>
-                        <div class="proj-tags">
-                            <span class="proj-tech">C++</span>
-                            <span class="proj-tech">Python</span>
-                            <span class="proj-tech">ROS 2</span>
-                            <span class="proj-tech">Isaac Sim</span>
-                            <span class="proj-tech">SteamVR</span>
-                        </div>
-                    </div>
-                    <div class="proj-footer">
-                        <a href="https://github.com/GoldStygian/Recorder-VR-Isaac" target="_blank" class="proj-link">
-                            <i class="ri-github-fill"></i> Apri Repository ↗
-                        </a>
-                    </div>
-                </article>
+                <div class="projects-grid">
 
-                <article class="proj-card reveal">
-                    <div class="proj-thumb" style="background:#1a0a0a;">
-                        <video src="Assets/videos/cluster.mp4" autoplay loop muted playsinline
-                            style="width:100%;height:100%;object-fit:cover;opacity:.8"></video>
-                        <span class="proj-tag">PROJECT_VID</span>
-                    </div>
-                    <div class="proj-body">
-                        <h3 class="proj-title">RacingDNA</h3>
-                        <p class="proj-desc">Piattaforma Deep Learning &amp; statistiche racing con analisi e
-                            visualizzazione dati. ⭐ 3 stelle su GitHub.</p>
-                        <div class="proj-tags">
-                            <span class="proj-tech">Python</span>
-                            <span class="proj-tech">PyTorch</span>
-                            <span class="proj-tech">Deep Learning</span>
-                            <span class="proj-tech">Data Analysis</span>
+                    <article class="proj-card reveal">
+                        <div class="proj-thumb" style="background:#0d1b2a;">
+                            <div class="proj-thumb-bg" style="background:#0d1b2a;">
+                                <span class="proj-thumb-text">DietiEstates</span>
+                            </div>
+                            <span class="proj-tag">MICROSERVICES</span>
                         </div>
-                    </div>
-                    <div class="proj-footer">
-                        <a href="https://github.com/GoldStygian/RacingDNA" target="_blank" class="proj-link">
-                            <i class="ri-github-fill"></i> Apri Repository ↗
-                        </a>
-                    </div>
-                </article>
+                        <div class="proj-body">
+                            <h3 class="proj-title">DietiEstates25</h3>
+                            <p class="proj-desc">Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.</p>
+                            <div class="proj-tags">
+                                <span class="proj-tech">Spring Boot</span>
+                                <span class="proj-tech">Flutter</span>
+                                <span class="proj-tech">RabbitMQ</span>
+                                <span class="proj-tech">Kong</span>
+                                <span class="proj-tech">Docker</span>
+                            </div>
+                        </div>
+                        <div class="proj-footer">
+                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
+                                <i class="ri-github-fill"></i> Apri Repository ↗
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="proj-card reveal">
-                    <div class="proj-thumb" style="background:#0a2e1a;">
-                        <div class="proj-thumb-bg" style="background:#0a2e1a;">
-                            <span class="proj-thumb-text">Street Cats 🐱</span>
+                    <article class="proj-card reveal">
+                        <div class="proj-thumb" style="background:#1a1a0a;">
+                            <div class="proj-thumb-bg" style="background:#1a1a0a;">
+                                <span class="proj-thumb-text">Tris Trick</span>
+                            </div>
+                            <span class="proj-tag">OS &amp; CONCURRENCY</span>
                         </div>
-                        <span class="proj-tag">PROJECT_IMG</span>
-                    </div>
-                    <div class="proj-body">
-                        <h3 class="proj-title">Street Cats</h3>
-                        <p class="proj-desc">SPA per la condivisione di avvistamenti di gatti randagi. Mappa
-                            interattiva, autenticazione, upload immagini, markdown e test E2E con Playwright.</p>
-                        <div class="proj-tags">
-                            <span class="proj-tech">Angular</span>
-                            <span class="proj-tech">TypeScript</span>
-                            <span class="proj-tech">Express</span>
-                            <span class="proj-tech">PostgreSQL</span>
-                            <span class="proj-tech">Playwright</span>
-                            <span class="proj-tech">Docker</span>
+                        <div class="proj-body">
+                            <h3 class="proj-title">Tris Trick</h3>
+                            <p class="proj-desc">Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.</p>
+                            <div class="proj-tags">
+                                <span class="proj-tech">C</span>
+                                <span class="proj-tech">Java</span>
+                                <span class="proj-tech">JavaFX</span>
+                                <span class="proj-tech">PThread</span>
+                                <span class="proj-tech">Docker</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="proj-footer">
-                        <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                            <i class="ri-github-fill"></i> Apri Repository ↗
-                        </a>
-                    </div>
-                </article>
+                        <div class="proj-footer">
+                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
+                                <i class="ri-github-fill"></i> Apri Repository ↗
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="proj-card reveal">
-                    <div class="proj-thumb" style="background:#2d0a3e;">
-                        <div class="proj-thumb-bg" style="background:#2d0a3e;">
-                            <span class="proj-thumb-text">MemeMuseum</span>
+                    <article class="proj-card reveal">
+                        <div class="proj-thumb" style="background:#0a2e1a;">
+                            <div class="proj-thumb-bg" style="background:#0a2e1a;">
+                                <span class="proj-thumb-text">Street Cats 🐱</span>
+                            </div>
+                            <span class="proj-tag">WEB &amp; E2E TESTING</span>
                         </div>
-                        <span class="proj-tag">PROJECT_IMG</span>
-                    </div>
-                    <div class="proj-body">
-                        <h3 class="proj-title">MemeMuseum</h3>
-                        <p class="proj-desc">Museo digitale della cultura internet. Una web app divertente per esplorare
-                            e catalogare meme.</p>
-                        <div class="proj-tags">
-                            <span class="proj-tech">JavaScript</span>
-                            <span class="proj-tech">Web App</span>
-                            <span class="proj-tech">Frontend</span>
+                        <div class="proj-body">
+                            <h3 class="proj-title">Street Cats</h3>
+                            <p class="proj-desc">SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.</p>
+                            <div class="proj-tags">
+                                <span class="proj-tech">Angular</span>
+                                <span class="proj-tech">TypeScript</span>
+                                <span class="proj-tech">Node.js</span>
+                                <span class="proj-tech">PostgreSQL</span>
+                                <span class="proj-tech">Leaflet</span>
+                                <span class="proj-tech">Playwright</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="proj-footer">
-                        <a href="https://github.com/GoldStygian/MemeMuseum" target="_blank" class="proj-link">
-                            <i class="ri-github-fill"></i> Apri Repository ↗
-                        </a>
-                    </div>
-                </article>
+                        <div class="proj-footer">
+                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
+                                <i class="ri-github-fill"></i> Apri Repository ↗
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="proj-card reveal">
-                    <div class="proj-thumb" style="background:#0f1a2e;">
-                        <div class="proj-thumb-bg" style="background:#0f1a2e;">
-                            <span class="proj-thumb-text">Deep Learning</span>
+                    <article class="proj-card reveal">
+                        <div class="proj-thumb" style="background:#1a0a2e;">
+                            <div class="proj-thumb-bg" style="background:#1a0a2e;">
+                                <span class="proj-thumb-text">PDC</span>
+                            </div>
+                            <span class="proj-tag">HPC &amp; PARALLEL</span>
                         </div>
-                        <span class="proj-tag">PROJECT_IMG</span>
-                    </div>
-                    <div class="proj-body">
-                        <h3 class="proj-title">NNDL</h3>
-                        <p class="proj-desc">Neural Networks &amp; Deep Learning — implementazioni FCNN e CNN con
-                            PyTorch. ⭐ 2 stelle su GitHub.</p>
-                        <div class="proj-tags">
-                            <span class="proj-tech">Python</span>
-                            <span class="proj-tech">PyTorch</span>
-                            <span class="proj-tech">Deep Learning</span>
+                        <div class="proj-body">
+                            <h3 class="proj-title">Parallel &amp; Distributed Computing</h3>
+                            <p class="proj-desc">Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.</p>
+                            <div class="proj-tags">
+                                <span class="proj-tech">C</span>
+                                <span class="proj-tech">MPI</span>
+                                <span class="proj-tech">HPC</span>
+                                <span class="proj-tech">Parallel Computing</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="proj-footer">
-                        <a href="https://github.com/GoldStygian/NNDL" target="_blank" class="proj-link">
-                            <i class="ri-github-fill"></i> Apri Repository ↗
-                        </a>
-                    </div>
-                </article>
+                        <div class="proj-footer">
+                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
+                                <i class="ri-github-fill"></i> Apri Repository ↗
+                            </a>
+                        </div>
+                    </article>
 
-                <article class="proj-card reveal">
-                    <div class="proj-thumb" style="background:#1a1a0a;">
-                        <div class="proj-thumb-bg" style="background:#1a1a0a;">
-                            <span class="proj-thumb-text">TicTacToe</span>
+                    <article class="proj-card reveal">
+                        <div class="proj-thumb" style="background:#1a0a0a;">
+                            <div class="proj-thumb-bg" style="background:#1a0a0a;">
+                                <span class="proj-thumb-text">FandomWiki</span>
+                            </div>
+                            <span class="proj-tag">OOP &amp; DATABASE</span>
                         </div>
-                        <span class="proj-tag">PROJECT_IMG</span>
-                    </div>
-                    <div class="proj-body">
-                        <h3 class="proj-title">TicTacToe</h3>
-                        <p class="proj-desc">Architettura client-server multithread per partite TicTacToe. Client
-                            JavaFX, server C con PThread, comunicazione command-based e distribuzione Docker.</p>
-                        <div class="proj-tags">
-                            <span class="proj-tech">C</span>
-                            <span class="proj-tech">Java</span>
-                            <span class="proj-tech">JavaFX</span>
-                            <span class="proj-tech">PThread</span>
-                            <span class="proj-tech">Docker</span>
+                        <div class="proj-body">
+                            <h3 class="proj-title">FandomWiki</h3>
+                            <p class="proj-desc">Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.</p>
+                            <div class="proj-tags">
+                                <span class="proj-tech">Java</span>
+                                <span class="proj-tech">Swing</span>
+                                <span class="proj-tech">PostgreSQL</span>
+                                <span class="proj-tech">DAO Pattern</span>
+                                <span class="proj-tech">JDBC</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="proj-footer">
-                        <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                            <i class="ri-github-fill"></i> Apri Repository ↗
-                        </a>
-                    </div>
-                </article>
+                        <div class="proj-footer">
+                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
+                                <i class="ri-github-fill"></i> Apri Repository ↗
+                            </a>
+                        </div>
+                    </article>
 
+                    <article class="proj-card reveal">
+                        <div class="proj-thumb" style="background:#0a1a2e;">
+                            <div class="proj-thumb-bg" style="background:#0a1a2e;">
+                                <span class="proj-thumb-text">AlgoLib</span>
+                            </div>
+                            <span class="proj-tag">C++ &amp; ALGORITHMS</span>
+                        </div>
+                        <div class="proj-body">
+                            <h3 class="proj-title">Library of Algorithms &amp; Data Structures</h3>
+                            <p class="proj-desc">Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.</p>
+                            <div class="proj-tags">
+                                <span class="proj-tech">C++</span>
+                                <span class="proj-tech">Hash Table</span>
+                                <span class="proj-tech">BST</span>
+                                <span class="proj-tech">Unit Testing</span>
+                                <span class="proj-tech">OOP</span>
+                            </div>
+                        </div>
+                        <div class="proj-footer">
+                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
+                                <i class="ri-github-fill"></i> Apri Repository ↗
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
             </div>
 
             <div class="projects-cta reveal">
@@ -643,7 +578,7 @@
     <!-- ═══════════════════════════════════════════════════
          REPORTS
     ═══════════════════════════════════════════════════ -->
-    <section id="reports">
+    <!-- <section id="reports">
         <div class="reports-header">
             <div class="reports-header-bar">
                 <div class="term-dot" style="background:#ff5f57"></div>
@@ -652,11 +587,11 @@
                 <span class="reports-file">USER_REPORTS.txt</span>
                 <span class="reports-live">LIVE_FEED</span>
             </div>
-        </div>
+        </div> -->
 
-        <div class="marquee-outer">
+        <!-- <div class="marquee-outer">
             <div class="marquee-inner">
-                <!-- Report cards -->
+
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--olive)"></div>
                     <div class="report-id" style="color:var(--olive)">REPORT_001.log</div>
@@ -712,7 +647,7 @@
                             class="ri-star-fill"></i><i class="ri-star-fill"></i>
                     </div>
                 </div>
-                <!-- Duplicated for seamless loop -->
+
                 <div class="report-card">
                     <div class="report-accent" style="background:var(--olive)"></div>
                     <div class="report-id" style="color:var(--olive)">REPORT_001.log</div>
@@ -769,8 +704,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
 
     <!-- ═══════════════════════════════════════════════════
          CONTACT
@@ -839,15 +774,14 @@
         <div class="footer-inner">
             <div>
                 <div class="footer-brand data.name">Raffaele Raia</div>
-                <div class="footer-tagline">CS Graduate & Developer<br>Università Federico II — 110/110<br>Python · C++
-                    · Java · TypeScript · Angular · Cybersecurity</div>
+                <div class="footer-tagline">
+                    <span class="data.tagline">CS Graduate &amp; Developer</span><br>
+                    <span class="data.university.short">Federico II</span> &mdash;
+                    <span class="data.location.city">Napoli</span>
+                </div>
                 <div class="footer-social">
-                    <a href="#" target="_blank" class="social-btn data.socials.github.url"><i
-                            class="ri-github-fill"></i></a>
-                    <a href="#" target="_blank" class="social-btn data.socials.linkedin.url"><i
-                            class="ri-linkedin-box-fill"></i></a>
-                    <a href="#" target="_blank" class="social-btn data.socials.huggingface.url"><i
-                            class="ri-robot-fill"></i></a>
+                    <a href="#" target="_blank" class="social-btn data.socials.github.url"><i class="ri-github-fill"></i></a>
+                    <a href="#" target="_blank" class="social-btn data.socials.linkedin.url"><i class="ri-linkedin-box-fill"></i></a>
                     <a href="#" class="social-btn data.socials.email"><i class="ri-mail-line"></i></a>
                 </div>
             </div>
@@ -865,10 +799,10 @@
         </div>
 
         <div class="footer-bottom">
-            <div class="footer-copy">© 2025 Raffaele Raia — Tutti i diritti riservati</div>
+            <div class="footer-copy">&copy; 2026 <span class="data.name">Raffaele Raia</span> &mdash; Tutti i diritti riservati</div>
             <div class="footer-copy" style="font-size:10px;">
-                <span class="cursor-icon" style="color:rgba(234,232,213,.3)">▶</span>
-                PORTFOLIO v2.0 — BUILT WITH HTML · CSS · JS
+                <span class="cursor-icon" style="color:rgba(234,232,213,.3)">&#9654;</span>
+                PORTFOLIO v2.0 &mdash; BUILT WITH HTML &middot; CSS &middot; JS
             </div>
         </div>
     </footer>

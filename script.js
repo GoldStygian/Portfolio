@@ -135,7 +135,8 @@ function replaceContent() {
             if (el.tagName === 'A') {
                 if (typeof value === 'string' && value.includes('@')) {
                     el.href = 'mailto:' + value;
-                    el.textContent = value;
+                    // Scrive il testo solo se il link non ha elementi figli (es. icone)
+                    if (!el.children.length) el.textContent = value;
                 } else {
                     el.href = value;
                 }
@@ -147,15 +148,37 @@ function replaceContent() {
     });
 }
 
-// ── Ticker — genera gli span da DATA.tech_stack ──
+// ── Ticker — tutti gli item di DATA.tech_stack ───────────────────
 (function renderTicker() {
-    const items = [
-        ...DATA.tech_stack.languages,
-        ...DATA.tech_stack.frameworks,
-        ...DATA.tech_stack.tools,
-    ];
+    const items = Object.values(DATA.tech_stack).flat();
     const spans = items.map(t => `<span>${t} <span class="ticker-dot">✦</span></span>`).join('');
-    document.getElementById('ticker-content').innerHTML = spans + spans; // duplicato per loop seamless
+    document.getElementById('ticker-content').innerHTML = spans + spans;
+})();
+
+// ── renderSkills — legge direttamente DATA.tech_stack ────────────
+(function renderSkills() {
+    const body  = document.getElementById('skills-body');
+    const badge = document.getElementById('skills-node-count');
+    if (!body) return;
+
+    let html = '';
+    let total = 0;
+
+    Object.entries(DATA.tech_stack).forEach(([cat, items]) => {
+        total += items.length;
+        const pills = items.map(n => `<span class="skill-pill">${n}</span>`).join('');
+        html += `
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <span class="skill-group-cat">${cat}</span>
+                <span class="skill-group-count">${items.length} node${items.length > 1 ? 's' : ''}</span>
+            </div>
+            <div class="skill-pills">${pills}</div>
+        </div>`;
+    });
+
+    body.innerHTML = html;
+    if (badge) badge.textContent = `${total} nodes loaded`;
 })();
 
 replaceContent();
