@@ -34,6 +34,7 @@
             },
             tech_stack: {
                 LANG:    ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart","HTML", "CSS"],
+                TEST:    ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"],
                 WEB:     ["Angular", "Django", "Express"],
                 TOOLS:   ["Makefile", "Valgrind", "Postman"],
                 OS:      ["Ubuntu", "Fedora", "Windows"],
@@ -41,7 +42,6 @@
                 DB:      ["PostgreSQL"],
                 OPS:     ["Docker"],
                 CLOUD:   ["Azure"],
-                TEST:    ["Playwright"],
                 DOCS:    ["LaTeX", "Markdown"],
                 VERSION: ["Git"],
                 DESIGN:  ["Figma"],
@@ -404,6 +404,36 @@
                                     style="color:rgba(234,232,213,.6)">git log --oneline </span><span
                                     style="animation:pulse 1s infinite">_</span></span>
                             <a href="https://github.com/GoldStygian" target="_blank">VIEW GITHUB →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language Stats -->
+                <div class="reveal">
+                    <div class="stats-block" style="height:100%;">
+                        <div class="stats-block-header">
+                            <div class="stats-block-icon"><i class="ri-terminal-window-fill" style="color:var(--amber)"></i></div>
+                            <span class="stats-block-title">Top Languages</span>
+                            <span class="stats-block-status" id="lang-status" style="color:var(--amber);animation:pulse 1.5s infinite">Fetching...</span>
+                        </div>
+                        
+                        <div id="gh-top-langs" style="min-height:166px; display:flex; flex-direction:column; justify-content:center; gap: 4px;">
+                            <div style="opacity:0.5; margin-bottom:12px;">
+                                <div style="width:100%; height:10px; background:rgba(234,232,213,0.1); margin-bottom:4px;"></div>
+                                <div style="width:60%; height:8px; background:rgba(234,232,213,0.05);"></div>
+                            </div>
+                            <div style="opacity:0.3; margin-bottom:12px;">
+                                <div style="width:100%; height:10px; background:rgba(234,232,213,0.1); margin-bottom:4px;"></div>
+                                <div style="width:40%; height:8px; background:rgba(234,232,213,0.05);"></div>
+                            </div>
+                            <div style="opacity:0.1;">
+                                <div style="width:100%; height:10px; background:rgba(234,232,213,0.1); margin-bottom:4px;"></div>
+                                <div style="width:20%; height:8px; background:rgba(234,232,213,0.05);"></div>
+                            </div>
+                        </div>
+
+                        <div class="stats-cmd" style="margin-top:auto;">
+                            <span><span class="prompt" style="color:rgba(234,232,213,.3)">$ </span><span style="color:rgba(234,232,213,.6)">analyze_repos --langs </span><span style="animation:pulse 1s infinite">_</span></span>
                         </div>
                     </div>
                 </div>

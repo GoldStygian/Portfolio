@@ -108,6 +108,60 @@ async function fetchGitHubStats() {
 }
 fetchGitHubStats();
 
+// GitHub Top Languages
+async function fetchTopLanguages() {
+    try {
+        const res = await fetch('https://api.github.com/users/GoldStygian/repos?per_page=100');
+        if (!res.ok) throw new Error();
+        const repos = await res.json();
+        
+        const langCounts = {};
+        let total = 0;
+        
+        repos.forEach(repo => {
+            if (repo.language && !repo.fork) {
+                langCounts[repo.language] = (langCounts[repo.language] || 0) + 1;
+                total++;
+            }
+        });
+        
+        // Convert to array and sort
+        const sortedLangs = Object.keys(langCounts).map(lang => ({
+            name: lang,
+            count: langCounts[lang],
+            percent: Math.round((langCounts[lang] / total) * 100)
+        })).sort((a, b) => b.count - a.count).slice(0, 4); // Top 4
+        
+        const langContainer = document.getElementById('gh-top-langs');
+        if (langContainer && sortedLangs.length > 0) {
+            langContainer.innerHTML = sortedLangs.map(l => {
+                const blocks = Math.round(l.percent / 10);
+                const filled = '█'.repeat(blocks);
+                const empty = '░'.repeat(10 - blocks);
+                return `
+                    <div style="margin-bottom: 12px;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:4px; font-family:var(--font-mono); font-size:11px; color:var(--ink-mid);">
+                            <span style="color:var(--bg); font-weight:700;">${l.name}</span>
+                            <span>${l.percent}%</span>
+                        </div>
+                        <div style="font-family:var(--font-mono); font-size:10px; color:var(--olive); letter-spacing:0.1em;">
+                            [<span style="color:var(--amber);">${filled}</span><span style="color:rgba(234,232,213,.2);">${empty}</span>]
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            const statusEl = document.getElementById('lang-status');
+            statusEl.textContent = 'Analyzed';
+            statusEl.style.animation = 'none';
+        }
+    } catch (err) {
+        const el = document.getElementById('lang-status');
+        if (el) { el.textContent = 'Offline'; el.style.color = 'var(--red)'; el.style.animation = 'none'; }
+    }
+}
+fetchTopLanguages();
+
 // ══════════════════════════════════════════════════════════════
 //  Sostituzione automatica — Cerca classi "data.x.y.z",
 //  risolve il percorso nell'oggetto DATA, e sostituisce il contenuto.
