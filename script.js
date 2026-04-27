@@ -336,3 +336,16 @@ function replaceContent() {
 })();
 
 replaceContent();
+
+// Theme Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+const themeStyleLink = document.getElementById('theme-style');
+let isAlternativeTheme = false;
+
+if (themeToggleBtn && themeStyleLink) {
+    themeToggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        isAlternativeTheme = !isAlternativeTheme;
+        themeStyleLink.href = isAlternativeTheme ? 'style2.css' : 'style.css';
+    });
+}
