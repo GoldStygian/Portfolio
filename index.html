@@ -18,35 +18,94 @@
          PORTFOLIO DATA
     ══════════════════════════════════════════════════════════════ -->
     <script>
-        const DATA = {
-            name: "Raffaele Raia",
-            tagline: "CS Graduate & Developer",
-            location: { city: "Napoli", country: "Italia" },
-            university: {
-                full: "Università degli Studi di Napoli Federico II",
-                short: "Federico II",
-            },
-            degree: { score: "110/110" },
-            socials: {
-                github: { url: "https://github.com/GoldStygian", username: "GoldStygian", repos: "https://github.com/GoldStygian?tab=repositories" },
-                linkedin: { url: "https://www.linkedin.com/in/raffaeleraia/", label: "Raffaele Raia" },
-                email: "raffaele.raia.work@gmail.com",
-            },
-            tech_stack: {
-                LANG:    ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart","HTML", "CSS"],
-                TEST:    ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"],
-                WEB:     ["Angular", "Django", "Express"],
-                TOOLS:   ["Makefile", "Valgrind", "Postman"],
-                OS:      ["Ubuntu", "Fedora", "Windows"],
-                MOBILE:  ["Flutter"],
-                DB:      ["PostgreSQL"],
-                OPS:     ["Docker"],
-                CLOUD:   ["Azure"],
-                DOCS:    ["LaTeX", "Markdown"],
-                VERSION: ["Git"],
-                DESIGN:  ["Figma"],
-            }
-        };
+        // BEGIN:DATA
+const DATA = {
+  "name": "Raffaele Raia",
+  "tagline": "CS Graduate & Developer",
+  "location": {
+    "city": "Napoli",
+    "country": "Italia"
+  },
+  "university": {
+    "full": "Università degli Studi di Napoli Federico II",
+    "short": "Federico II"
+  },
+  "degree": {
+    "score": "110/110"
+  },
+  "socials": {
+    "github": {
+      "url": "https://github.com/GoldStygian",
+      "username": "GoldStygian",
+      "repos": "https://github.com/GoldStygian?tab=repositories"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/raffaeleraia/",
+      "label": "Raffaele Raia"
+    },
+    "email": "raffaele.raia.work@gmail.com"
+  },
+  "tech_stack": {
+    "Linguaggi": [
+      "Java",
+      "Python",
+      "C",
+      "C++",
+      "JavaScript",
+      "TypeScript",
+      "Dart"
+    ],
+    "Web": [
+      "HTML",
+      "CSS",
+      "Angular",
+      "Django",
+      "Express"
+    ],
+    "Web bag": [
+      "RabbitMQ",
+      "Kong",
+      "JWT"
+    ],
+    "Database": [
+      "SQL",
+      "PostgreSQL",
+      "Sequelize"
+    ],
+    "Strumenti": [
+      "Git",
+      "Docker",
+      "Script Bash",
+      "Postman",
+      "Valgrind",
+      "Makefile"
+    ],
+    "Testing": [
+      "Playwright",
+      "Selenium WebDriver",
+      "Junit",
+      "RestAssured",
+      "Allure Report",
+      "Cucumber"
+    ],
+    "Sistemi operativi": [
+      "Windows",
+      "Linux",
+      "Mint",
+      "Ubunti",
+      "Kali",
+      "Fedora"
+    ],
+    "Documentazione": [
+      "Markdown",
+      "LaTeX"
+    ],
+    "Cloude": [
+      "Azure"
+    ]
+  }
+};
+// END:DATA
     </script>
 
     <!-- Anonymus Analytics (Umami) --> 
@@ -195,18 +254,14 @@
                 <hr class="section-rule">
             </div>
             <div class="about-grid">
-                <div class="about-bio reveal">
-                    <p>
-                        Sono <strong>Raffaele Raia</strong>, laureato in Informatica con <strong>110/110</strong>
-                        all'<strong>Università degli Studi di Napoli Federico II</strong>. Mi appassionano lo sviluppo
-                        software, le reti, i sistemi operativi e la <strong>cybersecurity</strong>.
-                    </p>
-                    <p>
-                        Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e
-                        programmazione. Ho svolto un tirocinio presso <strong>NTT Data</strong> nel settore Quality
-                        Assurance con metodologia BDD.
-                    </p>
-                </div>
+                <div class="about-bio reveal"><!-- BEGIN:about -->
+<p>
+Sono <strong>Raffaele Raia</strong>, laureato in Informatica con <strong>110/110</strong> all'<strong>Università degli Studi di Napoli Federico II</strong>. Mi appassionano lo sviluppo software, le reti, i sistemi operativi e la <strong>cybersecurity</strong>.
+</p>
+<p>
+Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso <strong>NTT Data</strong> nel settore Quality Assurance con metodologia BDD.
+</p>
+<!-- END:about --></div>
 
                 <div class="reveal">
                     <div class="skills-panel">
@@ -237,65 +292,63 @@
                 <hr class="section-rule">
             </div>
 
-            <div class="edu-grid">
-                <!-- Laurea -->
-                <div class="edu-card reveal">
-                    <div class="edu-badge">
-                        <i class="ri-graduation-cap-fill"></i>
-                    </div>
-                    <div class="edu-header">
-                        <h3 class="edu-title">Laurea in Informatica</h3>
-                        <span class="edu-date">2022 — 2026</span>
-                    </div>
-                    <p class="edu-org">▸ Università Federico II — Napoli</p>
-                    <div class="edu-score" style="color:var(--olive)">110/110</div>
-                    <ul class="edu-highlights">
-                        <li class="edu-area-title">Informatica &amp; Ing. del Software</li>
-                        <li>Ingegneria del Software <span class="edu-cfu">10 CFU</span></li>
-                        <li>Programmazione <span class="edu-cfu">9 CFU</span></li>
-                        <li>Algoritmi e Strutture Dati I <span class="edu-cfu">9 CFU</span></li>
-                        <li>Basi di Dati I <span class="edu-cfu">9 CFU</span></li>
-                        <li>Object Orientation <span class="edu-cfu">6 CFU</span></li>
-                        <li>Linguaggi di Programmazione I <span class="edu-cfu">6 CFU</span></li>
-                        <li>Tecnologie Web <span class="edu-cfu">6 CFU</span></li>
-                        <li>Laboratorio di Programmazione <span class="edu-cfu">6 CFU</span></li>
-                        <li>Laboratorio di Algoritmi e Strutture Dati <span class="edu-cfu">6 CFU</span></li>
-                        <li>Elementi di Informatica Teorica <span class="edu-cfu">6 CFU</span></li>
+            <div class="edu-grid"><!-- BEGIN:education -->
+<div class="edu-card reveal">
+<div class="edu-badge">
+<i class="ri-graduation-cap-fill"></i>
+</div>
+<div class="edu-header">
+<h3 class="edu-title">Laurea in Informatica</h3>
+<span class="edu-date">2022 — 2026</span>
+</div>
+<p class="edu-org">▸ Università Federico II — Napoli</p>
+<div class="edu-score" style="color:var(--olive)">110/110</div>
+<ul class="edu-highlights">
+<li class="edu-area-title">Informatica &amp; Ing. del Software</li>
+<li>Ingegneria del Software <span class="edu-cfu">10 CFU</span></li>
+<li>Programmazione <span class="edu-cfu">9 CFU</span></li>
+<li>Algoritmi e Strutture Dati I <span class="edu-cfu">9 CFU</span></li>
+<li>Basi di Dati I <span class="edu-cfu">9 CFU</span></li>
+<li>Object Orientation <span class="edu-cfu">6 CFU</span></li>
+<li>Linguaggi di Programmazione I <span class="edu-cfu">6 CFU</span></li>
+<li>Tecnologie Web <span class="edu-cfu">6 CFU</span></li>
+<li>Laboratorio di Programmazione <span class="edu-cfu">6 CFU</span></li>
+<li>Laboratorio di Algoritmi e Strutture Dati <span class="edu-cfu">6 CFU</span></li>
+<li>Elementi di Informatica Teorica <span class="edu-cfu">6 CFU</span></li>
+<li class="edu-area-title">Sistemi, Reti &amp; Architetture</li>
+<li>Sistemi Operativi I <span class="edu-cfu">9 CFU</span></li>
+<li>Laboratorio di Sistemi Operativi <span class="edu-cfu">9 CFU</span></li>
+<li>Architettura degli Elaboratori <span class="edu-cfu">9 CFU</span></li>
+<li>Reti di Calcolatori I <span class="edu-cfu">6 CFU</span></li>
+<li>Parallel and Distributed Computing <span class="edu-cfu">6 CFU</span></li>
+<li class="edu-area-title">Matematica, Fisica &amp; Gestionale</li>
+<li>Analisi Matematica I <span class="edu-cfu">9 CFU</span></li>
+<li>Algebra <span class="edu-cfu">9 CFU</span></li>
+<li>Calcolo delle Probabilità e Statistica <span class="edu-cfu">9 CFU</span></li>
+<li>Geometria <span class="edu-cfu">6 CFU</span></li>
+<li>Fisica Generale I <span class="edu-cfu">6 CFU</span></li>
+<li>Economia ed Organizzazione Aziendale <span class="edu-cfu">6 CFU</span></li>
+</ul>
+</div>
 
-                        <li class="edu-area-title">Sistemi, Reti &amp; Architetture</li>
-                        <li>Sistemi Operativi I <span class="edu-cfu">9 CFU</span></li>
-                        <li>Laboratorio di Sistemi Operativi <span class="edu-cfu">9 CFU</span></li>
-                        <li>Architettura degli Elaboratori <span class="edu-cfu">9 CFU</span></li>
-                        <li>Reti di Calcolatori I <span class="edu-cfu">6 CFU</span></li>
-                        <li>Parallel and Distributed Computing <span class="edu-cfu">6 CFU</span></li>
-
-                        <li class="edu-area-title">Matematica, Fisica &amp; Gestionale</li>
-                        <li>Analisi Matematica I <span class="edu-cfu">9 CFU</span></li>
-                        <li>Algebra <span class="edu-cfu">9 CFU</span></li>
-                        <li>Calcolo delle Probabilità e Statistica <span class="edu-cfu">9 CFU</span></li>
-                        <li>Geometria <span class="edu-cfu">6 CFU</span></li>
-                        <li>Fisica Generale I <span class="edu-cfu">6 CFU</span></li>
-                        <li>Economia ed Organizzazione Aziendale <span class="edu-cfu">6 CFU</span></li>
-                    </ul>
-                </div>
-
-                <!-- Diploma -->
-                <div class="edu-card reveal">
-                    <div class="edu-badge edu-badge--secondary">
-                        <i class="ri-book-open-fill"></i>
-                    </div>
-                    <div class="edu-header">
-                        <h3 class="edu-title">Diploma Elettronica ed Elettrotecnica</h3>
-                        <span class="edu-date">2019 — 2022</span>
-                    </div>
-                    <p class="edu-org">▸ ITIS "E. Majorana" — Somma Vesuviana, NA</p>
-                    <div class="edu-score" style="color:var(--ink-mid)">85/100</div>
-                    <ul class="edu-highlights">
-                        <li>Progettazione PCB con EasyEDA</li>
-                        <li>Disegni tecnici con AutoCAD</li>
-                        <li>Simulazione circuiti con NI Multisim e Tinkercad</li>
-                        <li>Sviluppo software per sistemi embedded (Arduino, ESP32)</li>
-                    </ul>
+<div class="edu-card reveal">
+<div class="edu-badge edu-badge--secondary">
+<i class="ri-book-open-fill"></i>
+</div>
+<div class="edu-header">
+<h3 class="edu-title">Diploma Elettronica ed Elettrotecnica</h3>
+<span class="edu-date">2019 — 2022</span>
+</div>
+<p class="edu-org">▸ ITIS "E. Majorana" — Somma Vesuviana, NA</p>
+<div class="edu-score" style="color:var(--ink-mid)">85/100</div>
+<ul class="edu-highlights">
+<li>Progettazione PCB con EasyEDA</li>
+<li>Disegni tecnici con AutoCAD</li>
+<li>Simulazione circuiti elettronici con NI Multisim e Tinkercad</li>
+<li>Sviluppo software per sistemi embedded (Arduino, ESP32)</li>
+</ul>
+</div>
+<!-- END:education -->
                 </div>
             </div>
         </div>
@@ -312,29 +365,26 @@
                 <h2 class="section-title">Experience<em>_Log</em></h2>
                 <hr class="section-rule">
             </div>
-            <div class="exp-timeline">
-
-                <div class="exp-entry reveal">
-                    <div class="exp-dot"></div>
-                    <div class="exp-card">
-                        <div class="exp-meta">
-                            <h3 class="exp-role">Software Engineer Intern</h3>
-                            <span class="exp-date">OTT 2025 — DIC 2025</span>
-                        </div>
-                        <p class="exp-org" style="color:var(--amber)">▸ NTT Data — Centro Direzionale, Napoli</p>
-                        <ul>
-                            <li>Settore: Quality Assurance</li>
-                            <li>Sviluppo architettura di test e casi di test automatizzati con Gherkin (BDD) per cliente
-                                bancario</li>
-                            <li>Monitoraggio migrazione applicativa multi-livello: Evento → Splunk → MongoDB → Oracle →
-                                API</li>
-                            <li>Automazione test per cliente turistico con scenari BDD e step definition personalizzate
-                            </li>
-                            <li>Preparazione ISTQB® Foundation Level e Advanced Level Test Automation Engineering</li>
-                            <li>Stack: Rest-Assured, Allure, Extend Report</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="exp-timeline"><!-- BEGIN:experience -->
+<div class="exp-entry reveal">
+<div class="exp-dot"></div>
+<div class="exp-card">
+<div class="exp-meta">
+<h3 class="exp-role">Software Engineer Intern</h3>
+<span class="exp-date">OTT 2025 — DIC 2025</span>
+</div>
+<p class="exp-org" style="color:var(--amber)">▸ NTT Data — Centro Direzionale, Napoli</p>
+<ul>
+<li>Settore: Quality Assurance</li>
+<li>Sviluppo architettura di test e casi di test automatizzati con Gherkin (BDD) per cliente bancario</li>
+<li>Monitoraggio migrazione applicativa multi-livello: Evento → Splunk → MongoDB → Oracle → API</li>
+<li>Automazione test per cliente turistico con scenari BDD e step definition personalizzate</li>
+<li>Preparazione ISTQB® Foundation Level e Advanced Level Test Automation Engineering</li>
+<li>Stack: Rest-Assured, Allure, Extent Report</li>
+</ul>
+</div>
+</div>
+<!-- END:experience -->
 
             </div>
         </div>
@@ -462,160 +512,179 @@
                 <div class="uni-timeline-label">
                     <i class="ri-graduation-cap-fill"></i>
                     <span>Federico II — Progetti di Corso</span>
-                    <span class="uni-timeline-count">6 projects</span>
+                    <span class="uni-timeline-count"><!-- BEGIN:project-count -->6 projects<!-- END:project-count --></span>
                 </div>
 
-                <div class="projects-grid">
+                <div class="projects-grid"><!-- BEGIN:projects -->
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#0d1b2a;">
+<div class="proj-thumb-bg" style="background:#0d1b2a;">
+<span class="proj-thumb-text">DietiEstates</span>
+</div>
+<span class="proj-tag">PRG UNI</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">DietiEstate25</h3>
+<p class="proj-desc">Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.</p>
+<div class="proj-tags">
+<span class="proj-tech">Dart</span>
+<span class="proj-tech">Flutter</span>
+<span class="proj-tech">Java</span>
+<span class="proj-tech">JUnit</span>
+<span class="proj-tech">PostgreSQL</span>
+<span class="proj-tech">RabbitMQ</span>
+<span class="proj-tech">JWT</span>
+<span class="proj-tech">Kong</span>
+<span class="proj-tech">Gradle</span>
+<span class="proj-tech">Maven</span>
+<span class="proj-tech">Azure</span>
+<span class="proj-tech">Docker</span>
+<span class="proj-tech">Figma</span>
+<span class="proj-tech">Git</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/DietiEstates25" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
 
-                    <article class="proj-card reveal">
-                        <div class="proj-thumb" style="background:#0d1b2a;">
-                            <div class="proj-thumb-bg" style="background:#0d1b2a;">
-                                <span class="proj-thumb-text">DietiEstates</span>
-                            </div>
-                            <span class="proj-tag">MICROSERVICES</span>
-                        </div>
-                        <div class="proj-body">
-                            <h3 class="proj-title">DietiEstates25</h3>
-                            <p class="proj-desc">Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.</p>
-                            <div class="proj-tags">
-                                <span class="proj-tech">Spring Boot</span>
-                                <span class="proj-tech">Flutter</span>
-                                <span class="proj-tech">RabbitMQ</span>
-                                <span class="proj-tech">Kong</span>
-                                <span class="proj-tech">Docker</span>
-                            </div>
-                        </div>
-                        <div class="proj-footer">
-                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                                <i class="ri-github-fill"></i> Apri Repository ↗
-                            </a>
-                        </div>
-                    </article>
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#1a1a0a;">
+<div class="proj-thumb-bg" style="background:#1a1a0a;">
+<span class="proj-thumb-text">Tris Trick</span>
+</div>
+<span class="proj-tag">PRG UNI</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">Tic Tac Toe</h3>
+<p class="proj-desc">Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.</p>
+<div class="proj-tags">
+<span class="proj-tech">C</span>
+<span class="proj-tech">Java</span>
+<span class="proj-tech">JavaFX</span>
+<span class="proj-tech">PThread</span>
+<span class="proj-tech">Docker</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/LSO" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
 
-                    <article class="proj-card reveal">
-                        <div class="proj-thumb" style="background:#1a1a0a;">
-                            <div class="proj-thumb-bg" style="background:#1a1a0a;">
-                                <span class="proj-thumb-text">Tris Trick</span>
-                            </div>
-                            <span class="proj-tag">OS &amp; CONCURRENCY</span>
-                        </div>
-                        <div class="proj-body">
-                            <h3 class="proj-title">Tris Trick</h3>
-                            <p class="proj-desc">Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.</p>
-                            <div class="proj-tags">
-                                <span class="proj-tech">C</span>
-                                <span class="proj-tech">Java</span>
-                                <span class="proj-tech">JavaFX</span>
-                                <span class="proj-tech">PThread</span>
-                                <span class="proj-tech">Docker</span>
-                            </div>
-                        </div>
-                        <div class="proj-footer">
-                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                                <i class="ri-github-fill"></i> Apri Repository ↗
-                            </a>
-                        </div>
-                    </article>
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#0a2e1a;">
+<div class="proj-thumb-bg" style="background:#0a2e1a;">
+<span class="proj-thumb-text">Street Cats</span>
+</div>
+<span class="proj-tag">PRG UNI</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">Street Cats</h3>
+<p class="proj-desc">SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.</p>
+<div class="proj-tags">
+<span class="proj-tech">JavaScript</span>
+<span class="proj-tech">TypeScript</span>
+<span class="proj-tech">Angular</span>
+<span class="proj-tech">Node.js</span>
+<span class="proj-tech">Express</span>
+<span class="proj-tech">SCSS</span>
+<span class="proj-tech">PostgreSQL</span>
+<span class="proj-tech">Sequelize</span>
+<span class="proj-tech">Leaflet</span>
+<span class="proj-tech">Multer</span>
+<span class="proj-tech">Docker</span>
+<span class="proj-tech">Zod</span>
+<span class="proj-tech">Playwright</span>
+<span class="proj-tech">JWT</span>
+<span class="proj-tech">Git</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/Project-Tecnologie-Web" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
 
-                    <article class="proj-card reveal">
-                        <div class="proj-thumb" style="background:#0a2e1a;">
-                            <div class="proj-thumb-bg" style="background:#0a2e1a;">
-                                <span class="proj-thumb-text">Street Cats 🐱</span>
-                            </div>
-                            <span class="proj-tag">WEB &amp; E2E TESTING</span>
-                        </div>
-                        <div class="proj-body">
-                            <h3 class="proj-title">Street Cats</h3>
-                            <p class="proj-desc">SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.</p>
-                            <div class="proj-tags">
-                                <span class="proj-tech">Angular</span>
-                                <span class="proj-tech">TypeScript</span>
-                                <span class="proj-tech">Node.js</span>
-                                <span class="proj-tech">PostgreSQL</span>
-                                <span class="proj-tech">Leaflet</span>
-                                <span class="proj-tech">Playwright</span>
-                            </div>
-                        </div>
-                        <div class="proj-footer">
-                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                                <i class="ri-github-fill"></i> Apri Repository ↗
-                            </a>
-                        </div>
-                    </article>
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#1a0a2e;">
+<div class="proj-thumb-bg" style="background:#1a0a2e;">
+<span class="proj-thumb-text">PDC</span>
+</div>
+<span class="proj-tag">PRG UNI</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">Parallel &amp; Distributed Computing</h3>
+<p class="proj-desc">Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.</p>
+<div class="proj-tags">
+<span class="proj-tech">C</span>
+<span class="proj-tech">MPI</span>
+<span class="proj-tech">HPC</span>
+<span class="proj-tech">Parallel Computing</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
 
-                    <article class="proj-card reveal">
-                        <div class="proj-thumb" style="background:#1a0a2e;">
-                            <div class="proj-thumb-bg" style="background:#1a0a2e;">
-                                <span class="proj-thumb-text">PDC</span>
-                            </div>
-                            <span class="proj-tag">HPC &amp; PARALLEL</span>
-                        </div>
-                        <div class="proj-body">
-                            <h3 class="proj-title">Parallel &amp; Distributed Computing</h3>
-                            <p class="proj-desc">Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.</p>
-                            <div class="proj-tags">
-                                <span class="proj-tech">C</span>
-                                <span class="proj-tech">MPI</span>
-                                <span class="proj-tech">HPC</span>
-                                <span class="proj-tech">Parallel Computing</span>
-                            </div>
-                        </div>
-                        <div class="proj-footer">
-                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                                <i class="ri-github-fill"></i> Apri Repository ↗
-                            </a>
-                        </div>
-                    </article>
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#1a0a0a;">
+<div class="proj-thumb-bg" style="background:#1a0a0a;">
+<span class="proj-thumb-text">FandomWiki</span>
+</div>
+<span class="proj-tag">PRG UNI</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">FandomWiki</h3>
+<p class="proj-desc">Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.</p>
+<div class="proj-tags">
+<span class="proj-tech">Java</span>
+<span class="proj-tech">Swing</span>
+<span class="proj-tech">PostgreSQL</span>
+<span class="proj-tech">DAO Pattern</span>
+<span class="proj-tech">JDBC</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/ProgettoOO" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
 
-                    <article class="proj-card reveal">
-                        <div class="proj-thumb" style="background:#1a0a0a;">
-                            <div class="proj-thumb-bg" style="background:#1a0a0a;">
-                                <span class="proj-thumb-text">FandomWiki</span>
-                            </div>
-                            <span class="proj-tag">OOP &amp; DATABASE</span>
-                        </div>
-                        <div class="proj-body">
-                            <h3 class="proj-title">FandomWiki</h3>
-                            <p class="proj-desc">Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.</p>
-                            <div class="proj-tags">
-                                <span class="proj-tech">Java</span>
-                                <span class="proj-tech">Swing</span>
-                                <span class="proj-tech">PostgreSQL</span>
-                                <span class="proj-tech">DAO Pattern</span>
-                                <span class="proj-tech">JDBC</span>
-                            </div>
-                        </div>
-                        <div class="proj-footer">
-                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                                <i class="ri-github-fill"></i> Apri Repository ↗
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="proj-card reveal">
-                        <div class="proj-thumb" style="background:#0a1a2e;">
-                            <div class="proj-thumb-bg" style="background:#0a1a2e;">
-                                <span class="proj-thumb-text">AlgoLib</span>
-                            </div>
-                            <span class="proj-tag">C++ &amp; ALGORITHMS</span>
-                        </div>
-                        <div class="proj-body">
-                            <h3 class="proj-title">Library of Algorithms &amp; Data Structures</h3>
-                            <p class="proj-desc">Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.</p>
-                            <div class="proj-tags">
-                                <span class="proj-tech">C++</span>
-                                <span class="proj-tech">Hash Table</span>
-                                <span class="proj-tech">BST</span>
-                                <span class="proj-tech">Unit Testing</span>
-                                <span class="proj-tech">OOP</span>
-                            </div>
-                        </div>
-                        <div class="proj-footer">
-                            <a href="https://github.com/GoldStygian" target="_blank" class="proj-link">
-                                <i class="ri-github-fill"></i> Apri Repository ↗
-                            </a>
-                        </div>
-                    </article>
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#0a1a2e;">
+<div class="proj-thumb-bg" style="background:#0a1a2e;">
+<span class="proj-thumb-text">AlgoLib</span>
+</div>
+<span class="proj-tag">PRG UNI</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">Algorithmssss and Data Structures</h3>
+<p class="proj-desc">Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.</p>
+<div class="proj-tags">
+<span class="proj-tech">C++</span>
+<span class="proj-tech">CMake</span>
+<span class="proj-tech">Hash Table</span>
+<span class="proj-tech">BST</span>
+<span class="proj-tech">Unit Testing</span>
+<span class="proj-tech">OOP</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
+<!-- END:projects -->
 
                 </div>
             </div>

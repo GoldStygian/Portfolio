@@ -1,0 +1,106 @@
+/* Stile del CV. Colori e font sono variabili: cambiarli qui aggiorna tutto. */
+:root {
+  --paper: #ffffff;
+  --navy: #2e3a54;
+  --ink: #3a4358;
+  --muted: #5c6579;
+  --font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-head: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+@page { size: A4; margin: 11mm 11mm 10mm; }
+
+* { box-sizing: border-box; }
+html { background: var(--paper); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 9.4pt;
+  line-height: 1.38;
+  color: var(--ink);
+}
+a { color: inherit; text-decoration: none; }
+ul { margin: 0; padding: 0 0 0 4.6mm; }
+li { margin: 0; padding: 0; }
+li::marker { font-size: 0.85em; }
+b { font-weight: 700; }
+
+/* Intestazione */
+.head { margin-bottom: 7mm; }
+h1 {
+  margin: 4mm 0 5mm;
+  text-align: center;
+  font: 800 27pt/1 var(--font-head);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6mm 0;
+  padding: 3.2mm 4mm;
+  border: 0.4mm solid var(--navy);
+  font-size: 9pt;
+}
+.ci { display: block; width: 33.33%; text-align: center; white-space: nowrap; }
+.ci i { display: inline-block; width: 3.4mm; height: 3.4mm; margin-right: 1.8mm; vertical-align: -0.6mm; color: var(--navy); }
+.ci i svg { display: block; width: 100%; height: 100%; }
+.ci a[href^="mailto"] { text-decoration: underline; }
+
+/* Titoli di sezione */
+h2 {
+  margin: 0 0 2.6mm;
+  font: 700 13pt/1.1 var(--font-head);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+h2.u::after {
+  content: "";
+  display: block;
+  width: 15mm;
+  margin-top: 2mm;
+  border-bottom: 0.7mm solid var(--navy);
+}
+h2.ruled { display: flex; align-items: center; gap: 4mm; margin-left: 1.5mm; }
+h2.ruled::after { content: ""; flex: 1; border-top: 0.25mm solid var(--navy); }
+
+.profile { margin-bottom: 7mm; }
+.profile p { margin: 0; padding: 0 1.5mm; text-align: justify; font-size: 9.5pt; line-height: 1.45; }
+
+/* Due colonne */
+.cols { display: flex; align-items: stretch; min-height: 176mm; }
+.side { width: 34%; padding-right: 5mm; }
+.main { width: 66%; padding-left: 5mm; border-left: 0.3mm solid var(--navy); }
+.side section, .main section { margin-bottom: 8mm; }
+
+/* Formazione */
+.edu { margin-bottom: 4mm; }
+.edu .period { font-style: italic; font-size: 10pt; letter-spacing: 0.06em; }
+.edu-title { margin: 1mm 0 0.6mm; font-weight: 700; font-size: 9.9pt; line-height: 1.3; }
+.side ul { padding-left: 4.4mm; }
+.side ul.o, ul.o { padding-left: 4.2mm; list-style: circle; }
+
+/* Righe titolo + data (esperienze, progetti) */
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+h3 { margin: 0; font: 700 11pt/1.3 var(--font-body); color: var(--ink); }
+h3 .sub { font-weight: 400; }
+.date { font-style: italic; font-size: 9.8pt; white-space: nowrap; }
+
+.job, .proj { margin-bottom: 5mm; break-inside: avoid; }
+.job ul.tight { margin-top: 0.8mm; font-size: 9.1pt; line-height: 1.34; }
+.job ul.o { font-size: 8.9pt; }
+.job ul.o.small { font-size: 8.3pt; }
+.proj > ul { margin-top: 0.8mm; }
+.proj { text-align: left; }
+.main .proj ul { padding-left: 4.6mm; }
+
+/* Seconda pagina */
+.page2 { break-before: page; padding-top: 2mm; }
+.page2 section { margin-bottom: 9mm; }
+.page2 .proj { margin-bottom: 6mm; }
+.page2 ul { padding-left: 5mm; }
+.certs > li { margin-bottom: 3.5mm; }
+.certs a { text-decoration: underline; }
