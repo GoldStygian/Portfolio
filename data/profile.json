@@ -1,0 +1,334 @@
+{
+  "person": {
+    "name": "Raffaele Raia",
+    "tagline": "CS Graduate & Developer",
+    "headline": "CS Graduate & Developer | Software Testing & QA Automation (BDD) | Java, Python, C++ | Cybersecurity",
+    "location": { "city": "Napoli", "region": "Campania", "country": "Italia" },
+    "email": "raffaele.raia.work@gmail.com",
+    "phone": "+39 331 106 7477",
+    "links": {
+      "github": {
+        "username": "GoldStygian",
+        "url": "https://github.com/GoldStygian",
+        "repos": "https://github.com/GoldStygian?tab=repositories"
+      },
+      "linkedin": { "handle": "raffaeleraia", "url": "https://www.linkedin.com/in/raffaeleraia/" },
+      "portfolio": { "label": "Portfolio", "url": "https://goldstygian.github.io/Portfolio/" }
+    }
+  },
+  "summary": "Studente di Informatica, appassionato di sviluppo software, reti e sistemi operativi. Esperienza pratica in progettazione elettronica e software tecnico. Motivato a contribuire a progetti innovativi e ad accrescere le proprie competenze professionali. Aspirante specialista in cybersecurity.",
+  "about": [
+    "Sono **Raffaele Raia**, laureato in Informatica con **110/110** all'**Università degli Studi di Napoli Federico II**. Mi appassionano lo sviluppo software, le reti, i sistemi operativi e la **cybersecurity**.",
+    "Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso **NTT Data** nel settore Quality Assurance con metodologia BDD."
+  ],
+  "education": [
+    {
+      "id": "unina",
+      "title": "Laurea in Scienze e Tecnologie Informatiche",
+      "webTitle": "Laurea in Informatica",
+      "institution": "Università degli studi di Napoli – Federico II",
+      "webInstitution": "Università Federico II — Napoli",
+      "start": "2022",
+      "end": "2026",
+      "grade": "110/110",
+      "courses": [
+        {
+          "area": "Informatica & Ing. del Software",
+          "items": [
+            ["Ingegneria del Software", 10],
+            ["Programmazione", 9],
+            ["Algoritmi e Strutture Dati I", 9],
+            ["Basi di Dati I", 9],
+            ["Object Orientation", 6],
+            ["Linguaggi di Programmazione I", 6],
+            ["Tecnologie Web", 6],
+            ["Laboratorio di Programmazione", 6],
+            ["Laboratorio di Algoritmi e Strutture Dati", 6],
+            ["Elementi di Informatica Teorica", 6]
+          ]
+        },
+        {
+          "area": "Sistemi, Reti & Architetture",
+          "items": [
+            ["Sistemi Operativi I", 9],
+            ["Laboratorio di Sistemi Operativi", 9],
+            ["Architettura degli Elaboratori", 9],
+            ["Reti di Calcolatori I", 6],
+            ["Parallel and Distributed Computing", 6]
+          ]
+        },
+        {
+          "area": "Matematica, Fisica & Gestionale",
+          "items": [
+            ["Analisi Matematica I", 9],
+            ["Algebra", 9],
+            ["Calcolo delle Probabilità e Statistica", 9],
+            ["Geometria", 6],
+            ["Fisica Generale I", 6],
+            ["Economia ed Organizzazione Aziendale", 6]
+          ]
+        }
+      ],
+      "fullName": "Università degli Studi di Napoli Federico II",
+      "shortName": "Federico II"
+    },
+    {
+      "id": "majorana",
+      "title": "Diploma in Elettronica ed Elettrotecnica",
+      "webTitle": "Diploma Elettronica ed Elettrotecnica",
+      "institution": "Istituto Tecnico Industriale Statale \"E. Majorana\" - Somma Vesuviana, NA",
+      "webInstitution": "ITIS \"E. Majorana\" — Somma Vesuviana, NA",
+      "start": "2019",
+      "end": "2022",
+      "grade": "85/100",
+      "skillsIntro": "Competenze e software utilizzati durante il percorso di studi:",
+      "skills": [
+        "Progettazione PCB con EasyEDA",
+        "Disegni tecnici con AutoCAD",
+        "Simulazione circuiti elettronici con NI Multisim e Tinkercad",
+        "Sviluppo software per sistemi embedded (Arduino, ESP32)"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "ntt-data",
+      "role": "Software Engineer Intern",
+      "company": "NTT Data",
+      "location": "Centro Direzionale Isola F8, 80143 Napoli NA",
+      "sector": "Quality Assurance",
+      "start": "2025-10-01",
+      "end": "2025-12-12",
+      "activities": [
+        "Sviluppo dell’architettura di test e scrittura di casi di test automatizzati utilizzando Gherkin secondo metodologia BDD per cliente bancario.",
+        "Implementazione di casi di test per il monitoraggio di una migrazione applicativa multi-livello, verificando il corretto flusso dei dati attraverso l’intera pipeline: Avvio evento → Splunk → MongoDB → Oracle → API finali.",
+        "Sviluppo e automazione di casi di test per un cliente in ambito turistico, basati su scenari BDD e step definition personalizzate."
+      ],
+      "learned": [
+        "Preparazione ISTQB® – International Software Testing Qualification a livello Foundation",
+        "Preparazione ISTQB® – l’International Software Testing Qualification per l’Advanced Level Test Automation Engineering",
+        "Rest-Assured, Allure, Extent Report"
+      ],
+      "web": {
+        "location": "Centro Direzionale, Napoli",
+        "bullets": [
+          "Settore: Quality Assurance",
+          "Sviluppo architettura di test e casi di test automatizzati con Gherkin (BDD) per cliente bancario",
+          "Monitoraggio migrazione applicativa multi-livello: Evento → Splunk → MongoDB → Oracle → API",
+          "Automazione test per cliente turistico con scenari BDD e step definition personalizzate",
+          "Preparazione ISTQB® Foundation Level e Advanced Level Test Automation Engineering",
+          "Stack: Rest-Assured, Allure, Extent Report"
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "dietiestate25",
+      "title": "DietiEstate25",
+      "subtitle": "Immobiliare.it Clone",
+      "start": "2024-12",
+      "end": "2025-07",
+      "repo": null,
+      "cv": {
+        "bullets": [
+          "Progetto universitario collaborativo per la gestione di servizi immobiliari",
+          "Architettura client-server scalabile e pronta per i microservizi.",
+          "Applicazione frontend multipiattaforma con framework Flutter, backend modulare in java e database relazionale PostgreSql per la persistenza dei dati.",
+          "Messaggistica asincrona con RabbitMQ e API Gateway Kong",
+          "Distribuzione containerizzata per supportare scalabilità e affidabilità."
+        ],
+        "tech": [
+          "Dart",
+          "Flutter",
+          "Java",
+          "JUnit",
+          "PostgreSQL",
+          "RabbitMQ",
+          "JWT",
+          "Kong",
+          "Gradle",
+          "Maven",
+          "Azure",
+          "Docker",
+          "Figma",
+          "Git"
+        ]
+      },
+      "web": {
+        "title": "DietiEstates25",
+        "thumbText": "DietiEstates",
+        "thumbBg": "#0d1b2a",
+        "tag": "MICROSERVICES",
+        "desc": "Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.",
+        "chips": ["Spring Boot", "Flutter", "RabbitMQ", "Kong", "Docker"]
+      }
+    },
+    {
+      "id": "tictactoe",
+      "title": "Tic Tac Toe",
+      "start": "2025-07",
+      "end": null,
+      "repo": null,
+      "cv": {
+        "bullets": [
+          "Progetto universitario collaborativo per la gestione di partite di Tic Tac Toe tra client che comunicano esclusivamente attraverso un unico server che gestisce le richieste in thread separati",
+          { "text": "Architettura client-server", "children": ["Client: JavaFX", "Server: C, PThread"] },
+          "Sistema di comunicazione command-based",
+          "Distribuzione containerizzata"
+        ],
+        "tech": ["C", "Java", "Docker"]
+      },
+      "web": {
+        "title": "Tris Trick",
+        "thumbText": "Tris Trick",
+        "thumbBg": "#1a1a0a",
+        "tag": "OS & CONCURRENCY",
+        "desc": "Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.",
+        "chips": ["C", "Java", "JavaFX", "PThread", "Docker"]
+      }
+    },
+    {
+      "id": "streetcats",
+      "title": "Street Cats",
+      "start": "2025-07",
+      "end": null,
+      "repo": null,
+      "cv": {
+        "bullets": [
+          "Progetto universitario per lo sviluppo di una SPA dedicata alla condivisione di avvistamenti di gatti randagi. Gli utenti registrati possono inserire nuovi gatti nel sistema, caricando una fotografia, indicando la posizione geografica tramite una mappa interattiva, e aggiungendo un titolo e una descrizione testuale.",
+          "Le funzionalità principali includono autenticazione, integrazione con mappe, caricamento di immagini, testi in formato markdown, gestione dei contenuti. L'app include test end-to-end automatizzati."
+        ],
+        "tech": [
+          "JavaScript",
+          "TypeScript",
+          "Angular",
+          "Node.js",
+          "Express",
+          "SCSS",
+          "PostgreSQL",
+          "Sequelize",
+          "Leaflet",
+          "Multer",
+          "Docker",
+          "Zod",
+          "Playwright",
+          "JWT",
+          "Git"
+        ]
+      },
+      "web": {
+        "title": "Street Cats",
+        "thumbText": "Street Cats 🐱",
+        "thumbBg": "#0a2e1a",
+        "tag": "WEB & E2E TESTING",
+        "desc": "SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.",
+        "chips": ["Angular", "TypeScript", "Node.js", "PostgreSQL", "Leaflet", "Playwright"]
+      }
+    },
+    {
+      "id": "pdc",
+      "title": "Parallel & Distributed Computing",
+      "repo": null,
+      "web": {
+        "title": "Parallel & Distributed Computing",
+        "thumbText": "PDC",
+        "thumbBg": "#1a0a2e",
+        "tag": "HPC & PARALLEL",
+        "desc": "Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.",
+        "chips": ["C", "MPI", "HPC", "Parallel Computing"]
+      }
+    },
+    {
+      "id": "fandomwiki",
+      "title": "FandomWiki",
+      "repo": null,
+      "web": {
+        "title": "FandomWiki",
+        "thumbText": "FandomWiki",
+        "thumbBg": "#1a0a0a",
+        "tag": "OOP & DATABASE",
+        "desc": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.",
+        "chips": ["Java", "Swing", "PostgreSQL", "DAO Pattern", "JDBC"]
+      }
+    },
+    {
+      "id": "algolib",
+      "title": "Algorithms and Data Structures",
+      "start": "2024-05",
+      "end": "2024-07",
+      "repo": null,
+      "cv": {
+        "bullets": [
+          "Sviluppo Librerie di strutture dati performanti in C++, tra cui: tabelle hash, iteratori, BST, alberi binari, stack, code, elenchi, vettori. Enfatizzata l'architettura pulita e la testabilità unitaria."
+        ],
+        "tech": ["C++", "CMake"]
+      },
+      "web": {
+        "title": "Library of Algorithms & Data Structures",
+        "thumbText": "AlgoLib",
+        "thumbBg": "#0a1a2e",
+        "tag": "C++ & ALGORITHMS",
+        "desc": "Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.",
+        "chips": ["C++", "Hash Table", "BST", "Unit Testing", "OOP"]
+      }
+    }
+  ],
+  "skills": {
+    "web": {
+      "LANG": ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart", "HTML", "CSS"],
+      "TEST": ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"],
+      "WEB": ["Angular", "Django", "Express"],
+      "TOOLS": ["Makefile", "Valgrind", "Postman"],
+      "OS": ["Ubuntu", "Fedora", "Windows"],
+      "MOBILE": ["Flutter"],
+      "DB": ["PostgreSQL"],
+      "OPS": ["Docker"],
+      "CLOUD": ["Azure"],
+      "DOCS": ["LaTeX", "Markdown"],
+      "VERSION": ["Git"],
+      "DESIGN": ["Figma"]
+    },
+    "cv": [
+      { "label": "Linguaggi", "items": ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "Dart"] },
+      { "label": "Web", "items": ["HTML", "CSS", "Angular", "PlayWright", "Django", "Express"] },
+      { "label": "Database", "items": ["SQL", "PostgreSQL", "Sequelize"] },
+      { "label": "Strumenti", "items": ["Git", "Docker", "Script Bash", "Postman"] },
+      { "label": "Altro", "items": ["Cybersecurity base"] }
+    ]
+  },
+  "certifications": [
+    {
+      "id": "python-ethical-hacking",
+      "name": "Learn Python & Ethical Hacking From Scratch",
+      "issuer": "Udemy",
+      "author": "Zaid Sabih, zSecurity",
+      "hours": 25,
+      "date": "2026-04",
+      "url": "https://ude.my/UC-ce330ffa-7e95-4e43-90d1-517ac27c8eae"
+    },
+    {
+      "id": "python-mega-course",
+      "name": "The Python Mega Course 2022: Build 10 Real-World Programs",
+      "issuer": "Udemy",
+      "author": "Ardit Sulce",
+      "hours": 33.5,
+      "date": "2021-11",
+      "url": "https://ude.my/UC-949ff7de-93aa-476a-a1ea-6c5b59a69f2b"
+    }
+  ],
+  "languages": [
+    { "name": "English", "level": "CEFR - A2" },
+    { "name": "Italian", "level": "native" }
+  ],
+  "drivingLicenses": ["B"],
+  "targets": {
+    "cv": { "projects": ["dietiestate25", "tictactoe", "algolib", "streetcats"], "projectsOnPage1": 1 },
+    "web": { "projects": ["dietiestate25", "tictactoe", "streetcats", "pdc", "fandomwiki", "algolib"] },
+    "linkedin": {
+      "projects": ["dietiestate25", "tictactoe", "streetcats", "algolib"],
+      "pinnedSkills": ["Java", "Python", "Test Automation"]
+    },
+    "readme": { "projects": ["dietiestate25", "streetcats", "algolib"] }
+  }
+}
