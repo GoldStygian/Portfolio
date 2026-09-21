@@ -129,174 +129,88 @@
       "subtitle": "Immobiliare.it Clone",
       "start": "2024-12",
       "end": "2025-07",
-      "repo": null,
-      "cv": {
-        "bullets": [
-          "Progetto universitario collaborativo per la gestione di servizi immobiliari",
-          "Architettura client-server scalabile e pronta per i microservizi.",
-          "Applicazione frontend multipiattaforma con framework Flutter, backend modulare in java e database relazionale PostgreSql per la persistenza dei dati.",
-          "Messaggistica asincrona con RabbitMQ e API Gateway Kong",
-          "Distribuzione containerizzata per supportare scalabilità e affidabilità."
-        ],
-        "tech": [
-          "Dart",
-          "Flutter",
-          "Java",
-          "JUnit",
-          "PostgreSQL",
-          "RabbitMQ",
-          "JWT",
-          "Kong",
-          "Gradle",
-          "Maven",
-          "Azure",
-          "Docker",
-          "Figma",
-          "Git"
-        ]
-      },
-      "web": {
-        "title": "DietiEstates25",
-        "thumbText": "DietiEstates",
-        "thumbBg": "#0d1b2a",
-        "tag": "MICROSERVICES",
-        "desc": "Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.",
-        "chips": ["Spring Boot", "Flutter", "RabbitMQ", "Kong", "Docker"]
-      }
+      "tag": "PRG UNI",
+      "repo": "https://github.com/GoldStygian/DietiEstates25",
+      "summary": "Progetto universitario collaborativo per la gestione di servizi immobiliari. Architettura client-server scalabile e pronta per i microservizi. Applicazione frontend multipiattaforma con Flutter, backend modulare in Java e database relazionale PostgreSQL.",
+      "desc": "Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.",
+      "thumbText": "DietiEstates",
+      "thumbBg": "#0d1b2a",
+      "tech": ["Dart", "Flutter", "Java", "JUnit", "PostgreSQL", "RabbitMQ", "JWT", "Kong", "Gradle", "Maven", "Azure", "Docker", "Figma", "Git"]
     },
     {
       "id": "tictactoe",
       "title": "Tic Tac Toe",
       "start": "2025-07",
       "end": null,
-      "repo": null,
-      "cv": {
-        "bullets": [
-          "Progetto universitario collaborativo per la gestione di partite di Tic Tac Toe tra client che comunicano esclusivamente attraverso un unico server che gestisce le richieste in thread separati",
-          { "text": "Architettura client-server", "children": ["Client: JavaFX", "Server: C, PThread"] },
-          "Sistema di comunicazione command-based",
-          "Distribuzione containerizzata"
-        ],
-        "tech": ["C", "Java", "Docker"]
-      },
-      "web": {
-        "title": "Tris Trick",
-        "thumbText": "Tris Trick",
-        "thumbBg": "#1a1a0a",
-        "tag": "OS & CONCURRENCY",
-        "desc": "Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.",
-        "chips": ["C", "Java", "JavaFX", "PThread", "Docker"]
-      }
+      "tag": "PRG UNI",
+      "repo": "https://github.com/GoldStygian/LSO",
+      "summary": "Progetto universitario collaborativo per la gestione di partite di Tic Tac Toe tra client che comunicano attraverso un server con richieste gestite in thread separati. Architettura client-server con client JavaFX, server C con PThread, comunicazione command-based e distribuzione containerizzata.",
+      "desc": "Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.",
+      "thumbText": "Tris Trick",
+      "thumbBg": "#1a1a0a",
+      "tech": ["C", "Java", "JavaFX", "PThread", "Docker"]
     },
     {
       "id": "streetcats",
       "title": "Street Cats",
       "start": "2025-07",
       "end": null,
-      "repo": null,
-      "cv": {
-        "bullets": [
-          "Progetto universitario per lo sviluppo di una SPA dedicata alla condivisione di avvistamenti di gatti randagi. Gli utenti registrati possono inserire nuovi gatti nel sistema, caricando una fotografia, indicando la posizione geografica tramite una mappa interattiva, e aggiungendo un titolo e una descrizione testuale.",
-          "Le funzionalità principali includono autenticazione, integrazione con mappe, caricamento di immagini, testi in formato markdown, gestione dei contenuti. L'app include test end-to-end automatizzati."
-        ],
-        "tech": [
-          "JavaScript",
-          "TypeScript",
-          "Angular",
-          "Node.js",
-          "Express",
-          "SCSS",
-          "PostgreSQL",
-          "Sequelize",
-          "Leaflet",
-          "Multer",
-          "Docker",
-          "Zod",
-          "Playwright",
-          "JWT",
-          "Git"
-        ]
-      },
-      "web": {
-        "title": "Street Cats",
-        "thumbText": "Street Cats 🐱",
-        "thumbBg": "#0a2e1a",
-        "tag": "WEB & E2E TESTING",
-        "desc": "SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.",
-        "chips": ["Angular", "TypeScript", "Node.js", "PostgreSQL", "Leaflet", "Playwright"]
-      }
+      "tag": "PRG UNI",
+      "repo": "https://github.com/GoldStygian/Project-Tecnologie-Web",
+      "summary": "Progetto universitario per lo sviluppo di una SPA dedicata alla condivisione di avvistamenti di gatti randagi, con autenticazione, mappe interattive, caricamento immagini, contenuti Markdown e test end-to-end automatizzati.",
+      "desc": "SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.",
+      "thumbText": "Street Cats",
+      "thumbBg": "#0a2e1a",
+      "tech": ["JavaScript", "TypeScript", "Angular", "Node.js", "Express", "SCSS", "PostgreSQL", "Sequelize", "Leaflet", "Multer", "Docker", "Zod", "Playwright", "JWT", "Git"]
     },
     {
       "id": "pdc",
       "title": "Parallel & Distributed Computing",
-      "repo": null,
-      "web": {
-        "title": "Parallel & Distributed Computing",
-        "thumbText": "PDC",
-        "thumbBg": "#1a0a2e",
-        "tag": "HPC & PARALLEL",
-        "desc": "Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.",
-        "chips": ["C", "MPI", "HPC", "Parallel Computing"]
-      }
+      "tag": "PRG UNI",
+      "repo": "https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing",
+      "summary": "Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.",
+      "desc": "Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.",
+      "thumbText": "PDC",
+      "thumbBg": "#1a0a2e",
+      "tech": ["C", "MPI", "HPC", "Parallel Computing"]
     },
     {
       "id": "fandomwiki",
       "title": "FandomWiki",
-      "repo": null,
-      "web": {
-        "title": "FandomWiki",
-        "thumbText": "FandomWiki",
-        "thumbBg": "#1a0a0a",
-        "tag": "OOP & DATABASE",
-        "desc": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.",
-        "chips": ["Java", "Swing", "PostgreSQL", "DAO Pattern", "JDBC"]
-      }
+      "tag": "PRG UNI",
+      "repo": "https://github.com/GoldStygian/ProgettoOO",
+      "summary": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL, con applicazione del pattern DAO e gestione completa delle transazioni.",
+      "desc": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.",
+      "thumbText": "FandomWiki",
+      "thumbBg": "#1a0a0a",
+      "tech": ["Java", "Swing", "PostgreSQL", "DAO Pattern", "JDBC"]
     },
     {
       "id": "algolib",
       "title": "Algorithms and Data Structures",
       "start": "2024-05",
       "end": "2024-07",
-      "repo": null,
-      "cv": {
-        "bullets": [
-          "Sviluppo Librerie di strutture dati performanti in C++, tra cui: tabelle hash, iteratori, BST, alberi binari, stack, code, elenchi, vettori. Enfatizzata l'architettura pulita e la testabilità unitaria."
-        ],
-        "tech": ["C++", "CMake"]
-      },
-      "web": {
-        "title": "Library of Algorithms & Data Structures",
-        "thumbText": "AlgoLib",
-        "thumbBg": "#0a1a2e",
-        "tag": "C++ & ALGORITHMS",
-        "desc": "Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.",
-        "chips": ["C++", "Hash Table", "BST", "Unit Testing", "OOP"]
-      }
+      "tag": "PRG UNI",
+      "repo": "https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git",
+      "summary": "Sviluppo di librerie di strutture dati performanti in C++, tra cui tabelle hash, iteratori, BST, alberi binari, stack, code, elenchi e vettori, con attenzione all'architettura pulita e alla testabilità unitaria.",
+      "desc": "Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.",
+      "thumbText": "AlgoLib",
+      "thumbBg": "#0a1a2e",
+      "tech": ["C++", "CMake", "Hash Table", "BST", "Unit Testing", "OOP"]
     }
   ],
-  "skills": {
-    "web": {
-      "LANG": ["Python", "C++", "Java", "C", "JavaScript", "TypeScript", "Dart", "HTML", "CSS"],
-      "TEST": ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"],
-      "WEB": ["Angular", "Django", "Express"],
-      "TOOLS": ["Makefile", "Valgrind", "Postman"],
-      "OS": ["Ubuntu", "Fedora", "Windows"],
-      "MOBILE": ["Flutter"],
-      "DB": ["PostgreSQL"],
-      "OPS": ["Docker"],
-      "CLOUD": ["Azure"],
-      "DOCS": ["LaTeX", "Markdown"],
-      "VERSION": ["Git"],
-      "DESIGN": ["Figma"]
-    },
-    "cv": [
+  "skills": 
+    [
       { "label": "Linguaggi", "items": ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "Dart"] },
-      { "label": "Web", "items": ["HTML", "CSS", "Angular", "PlayWright", "Django", "Express"] },
+      { "label": "Web", "items": ["HTML", "CSS", "Angular", "Django", "Express"] },
+      { "label": "Web bag", "items": ["RabbitMQ", "Kong", "JWT"] },
       { "label": "Database", "items": ["SQL", "PostgreSQL", "Sequelize"] },
-      { "label": "Strumenti", "items": ["Git", "Docker", "Script Bash", "Postman"] },
-      { "label": "Altro", "items": ["Cybersecurity base"] }
-    ]
-  },
+      { "label": "Strumenti", "items": ["Git", "Docker", "Script Bash", "Postman", "Valgrind", "Makefile"] },
+      { "label": "Testing", "items": ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"] },
+      { "label": "Sistemi operativi", "items": ["Windows", "Linux", "Mint", "Ubunti", "Kali", "Fedora"] },
+      { "label": "Documentazione", "items": ["Markdown", "LaTeX"] },
+      { "label": "Cloude", "items": ["Azure"] }
+      ],
   "certifications": [
     {
       "id": "python-ethical-hacking",
@@ -322,6 +236,29 @@
     { "name": "Italian", "level": "native" }
   ],
   "drivingLicenses": ["B"],
+  "readme": {
+    "introImage": "asset/boot.svg",
+    "trophy": {
+      "url": "https://github.com/ryo-ma/github-profile-trophy",
+      "image": "https://github-profile-trophy.vercel.app/?username=GoldStygian&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C&column=-1&theme=nord&no-bg=true&no-frame=true"
+    },
+    "universityProjects": [
+      { "label": "LASD", "url": "https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git" },
+      { "label": "OO-DB (FandomWiki)", "url": "https://github.com/GoldStygian/ProgettoOO.git" },
+      { "label": "PDC", "url": "https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing" },
+      { "label": "Tecnologie Web", "url": "https://github.com/GoldStygian/Project-Tecnologie-Web" },
+      { "label": "ING SW (DietiEstates25)", "url": "https://github.com/GoldStygian/DietiEstates25" },
+      { "label": "LSO (Tic Tac Toe)", "url": "https://github.com/GoldStygian/LSO" }
+    ],
+    "personalProjects": [
+      { "label": "Music Library", "url": "https://github.com/GoldStygian/Music_library.git" },
+      { "label": "CLogger", "url": "https://github.com/GoldStygian/CLogger" }
+    ],
+    "stats": {
+      "languages": "https://github-readme-stats.vercel.app/api/top-langs/?username=GoldStygian&layout=compact&theme=radical",
+      "profile": "https://github-readme-stats.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical&card_width=220"
+    }
+  },
   "targets": {
     "cv": { "projects": ["dietiestate25", "tictactoe", "algolib", "streetcats"], "projectsOnPage1": 1 },
     "web": { "projects": ["dietiestate25", "tictactoe", "streetcats", "pdc", "fandomwiki", "algolib"] },
