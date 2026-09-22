@@ -245,8 +245,8 @@
   "readme": {
     "introImage": "asset/boot.svg",
     "trophy": {
-      "url": "https://github.com/ryo-ma/github-profile-trophy",
-      "image": "https://github-profile-trophy.vercel.app/?username=GoldStygian&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C&column=-1&theme=nord&no-bg=true&no-frame=true"
+      "url": "https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian",
+      "image": "https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian"
     },
     "stats": {
       "languages": "https://github-readme-stats.vercel.app/api/top-langs/?username=GoldStygian&layout=compact&theme=radical",
