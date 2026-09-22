@@ -1107,6 +1107,53 @@ section {
 /* ═══════════════════════════════════════════════════
     CODING STATS SECTION
 ═══════════════════════════════════════════════════ */
+.cert-wrap {
+    padding: 80px 40px 100px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.cert-card {
+    display: flex;
+    gap: 18px;
+    min-height: 190px;
+    padding: 24px;
+    border: 1.5px solid var(--rule);
+    background: var(--cream);
+}
+
+.cert-icon {
+    flex: 0 0 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    color: var(--amber);
+    border: 1px solid var(--amber);
+    font-size: 21px;
+}
+
+.cert-content { display: flex; flex-direction: column; min-width: 0; }
+.cert-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--ink-fade);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+.cert-card h3 { margin: 16px 0 8px; color: var(--ink); font-family: var(--font-display); font-size: 19px; line-height: 1.15; }
+.cert-card p { margin: 0; color: var(--ink-mid); font-family: var(--font-ui); font-size: 14px; }
+.cert-link { margin-top: auto; padding-top: 20px; color: var(--red); font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
+
+/* ═══════════════════════════════════════════════════
+    CODING STATS SECTION
+═══════════════════════════════════════════════════ */
 #coding-stats {
     background: var(--ink);
     padding: 80px 40px 100px;

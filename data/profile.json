@@ -129,7 +129,8 @@
       "subtitle": "Immobiliare.it Clone",
       "start": "2024-12",
       "end": "2025-07",
-      "tag": "PRG UNI",
+      "tag": "PROG UNI",
+      "exam": "Ingegneria del Software",
       "repo": "https://github.com/GoldStygian/DietiEstates25",
       "summary": "Progetto universitario collaborativo per la gestione di servizi immobiliari. Architettura client-server scalabile e pronta per i microservizi. Applicazione frontend multipiattaforma con Flutter, backend modulare in Java e database relazionale PostgreSQL.",
       "desc": "Piattaforma immobiliare a microservizi Spring Boot con client Flutter. Comunicazione asincrona via RabbitMQ, Kong come API Gateway e orchestrazione container con Docker.",
@@ -142,7 +143,8 @@
       "title": "Tic Tac Toe",
       "start": "2025-07",
       "end": null,
-      "tag": "PRG UNI",
+      "tag": "PROG UNI",
+      "exam": "Laboratorio di Sistemi Operativi",
       "repo": "https://github.com/GoldStygian/LSO",
       "summary": "Progetto universitario collaborativo per la gestione di partite di Tic Tac Toe tra client che comunicano attraverso un server con richieste gestite in thread separati. Architettura client-server con client JavaFX, server C con PThread, comunicazione command-based e distribuzione containerizzata.",
       "desc": "Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.",
@@ -155,7 +157,8 @@
       "title": "Street Cats",
       "start": "2025-07",
       "end": null,
-      "tag": "PRG UNI",
+      "tag": "PROG UNI",
+      "exam": "Tecnologie Web",
       "repo": "https://github.com/GoldStygian/Project-Tecnologie-Web",
       "summary": "Progetto universitario per lo sviluppo di una SPA dedicata alla condivisione di avvistamenti di gatti randagi, con autenticazione, mappe interattive, caricamento immagini, contenuti Markdown e test end-to-end automatizzati.",
       "desc": "SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.",
@@ -165,8 +168,9 @@
     },
     {
       "id": "pdc",
-      "title": "Parallel & Distributed Computing",
-      "tag": "PRG UNI",
+      "title": "Algoritmi Paralleli e Distribuiti",
+      "tag": "PROG UNI",
+      "exam": "Parallel and Distributed Computing",
       "repo": "https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing",
       "summary": "Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.",
       "desc": "Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.",
@@ -177,7 +181,8 @@
     {
       "id": "fandomwiki",
       "title": "FandomWiki",
-      "tag": "PRG UNI",
+      "tag": "PROG UNI",
+      "exam": "Object Orientation and Databases",
       "repo": "https://github.com/GoldStygian/ProgettoOO",
       "summary": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL, con applicazione del pattern DAO e gestione completa delle transazioni.",
       "desc": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.",
@@ -187,10 +192,11 @@
     },
     {
       "id": "algolib",
-      "title": "Algorithms and Data Structures",
+      "title": "Libreria delle maggiori struutre dati in C++",
       "start": "2024-05",
       "end": "2024-07",
-      "tag": "PRG UNI",
+      "tag": "PROG UNI",
+      "exam": "Laboratorio di Algoritmi e Strutture Dati",
       "repo": "https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git",
       "summary": "Sviluppo di librerie di strutture dati performanti in C++, tra cui tabelle hash, iteratori, BST, alberi binari, stack, code, elenchi e vettori, con attenzione all'architettura pulita e alla testabilità unitaria.",
       "desc": "Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.",
@@ -242,18 +248,6 @@
       "url": "https://github.com/ryo-ma/github-profile-trophy",
       "image": "https://github-profile-trophy.vercel.app/?username=GoldStygian&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C&column=-1&theme=nord&no-bg=true&no-frame=true"
     },
-    "universityProjects": [
-      { "label": "LASD", "url": "https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git" },
-      { "label": "OO-DB (FandomWiki)", "url": "https://github.com/GoldStygian/ProgettoOO.git" },
-      { "label": "PDC", "url": "https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing" },
-      { "label": "Tecnologie Web", "url": "https://github.com/GoldStygian/Project-Tecnologie-Web" },
-      { "label": "ING SW (DietiEstates25)", "url": "https://github.com/GoldStygian/DietiEstates25" },
-      { "label": "LSO (Tic Tac Toe)", "url": "https://github.com/GoldStygian/LSO" }
-    ],
-    "personalProjects": [
-      { "label": "Music Library", "url": "https://github.com/GoldStygian/Music_library.git" },
-      { "label": "CLogger", "url": "https://github.com/GoldStygian/CLogger" }
-    ],
     "stats": {
       "languages": "https://github-readme-stats.vercel.app/api/top-langs/?username=GoldStygian&layout=compact&theme=radical",
       "profile": "https://github-readme-stats.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical&card_width=220"

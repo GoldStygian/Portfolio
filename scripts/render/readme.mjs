@@ -1,7 +1,6 @@
 import { plain, projectsFor } from "../lib/util.mjs";
 
 const image = (src, alt = "", attrs = "") => `<img src="${src}" alt="${alt}"${attrs}>`;
-const projectLinks = (items) => items.map(({ label, url }) => `- 🚀 [${label}](${url})`).join("\n");
 
 const ICON_SLUGS = {
   "C++": "cplusplus",
@@ -43,13 +42,16 @@ export function renderReadme(p) {
     .map(({ label, items }) => `| ${label} | ${items.join(", ")} |`)
     .join("\n");
 
-  const featured = projectsFor(p, "readme")
-    .map((x) => {
-      const title = x.title;
-      const desc = x.desc;
-      return `- **${x.repo ? `[${title}](${x.repo})` : title}** — ${desc}`;
-    })
+  const universityProjects = p.projects
+    .filter((x) => x.tag === "PROG UNI")
+    .map(({ title, exam, repo, desc }) => `- **${exam} - ${repo ? `[${title}](${repo})` : title}** — ${desc}`)
     .join("\n");
+
+    /*
+  const featured = universityProjects
+    .map(({ title, exam, repo, desc }) => `- **${repo ? `[${title}](${repo})` : title}** — ${desc}`)
+    .join("\n");
+*/
 
   const stats = config.stats
     ? `<p align="center">\n  <a href="https://github.com/anuraghazra/github-readme-stats">\n    ${image(config.stats.languages, "Top languages", ' height="200" align="center"')}\n    ${image(config.stats.profile, "GitHub statistics", ' height="200" align="center"')}\n  </a>\n</p>`
@@ -63,23 +65,13 @@ ${p.about.map(plain).join("\n\n")}
 
 ${config.trophy ? `<p align="center">\n  <a href="${config.trophy.url}">\n    ${image(config.trophy.image, "trophy")}\n  </a>\n</p>` : ""}
 
-${config.universityProjects ? `## University's project\nI’m currently working/ed on **University's project**:\n${projectLinks(config.universityProjects)}` : ""}
+${universityProjects ? `## University's project\n${universityProjects}` : ""}
 
-${config.personalProjects ? `## 🧑🏻‍💻 Public Personal project:\n${config.personalProjects.map(({ label, url }) => `- 🛠️ [${label}](${url})`).join("\n")}` : ""}
+${config.personalProjects ? `## Public Personal project:\n${config.personalProjects.map(({ label, url }) => `- 🛠️ [${label}](${url})`).join("\n")}` : ""}
 
 ## Statistics
 
 ${stats}
-
-## Stack
-
-| | |
-|---|---|
-${stack}
-
-## Progetti in evidenza
-
-${featured}
 
 ## Skills
 
@@ -93,3 +85,17 @@ Altri progetti nei [repository](${person.links.github.repos}) e nel [portfolio](
 <a href="${person.links.linkedin.url}" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
 `;
 }
+
+/*
+## Progetti in evidenza
+
+${featured}
+*/
+
+/*
+## Stack
+
+| | |
+|---|---|
+${stack}
+*/

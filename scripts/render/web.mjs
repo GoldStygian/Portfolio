@@ -2,7 +2,7 @@
 // così style.css e script.js continuano a funzionare senza modifiche.
 import { esc, attr, richHtml, fmtMonth, fmtRange, projectsFor } from "../lib/util.mjs";
 
-export const BLOCKS = ["DATA", "about", "education", "experience", "project-count", "projects"];
+export const BLOCKS = ["DATA", "about", "education", "experience", "certifications", "project-count", "projects"];
 
 function dataBlock(p) {
   const edu = p.education[0];
@@ -78,6 +78,20 @@ ${bullets.map((b) => `<li>${esc(b)}</li>`).join("\n")}
     .join("\n\n");
 }
 
+function certificationsBlock(p) {
+  return p.certifications
+    .map((c) => `<article class="cert-card reveal">
+<div class="cert-icon"><i class="ri-award-fill"></i></div>
+<div class="cert-content">
+<div class="cert-meta"><span>${esc(fmtMonth(c.date, "itLong"))}</span><span>${esc(c.hours)} ore</span></div>
+<h3>${esc(c.name)}</h3>
+<p>${esc(c.issuer)} · ${esc(c.author)}</p>
+<a href="${attr(c.url)}" target="_blank" class="cert-link">Verifica credenziale ↗</a>
+</div>
+</article>`)
+    .join("\n\n");
+}
+
 function projectsBlock(p) {
   return projectsFor(p, "web")
     .map((x) => {
@@ -112,6 +126,7 @@ export function renderBlocks(p) {
     about: aboutBlock(p),
     education: educationBlock(p),
     experience: experienceBlock(p),
+    certifications: certificationsBlock(p),
     "project-count": `${projectsFor(p, "web").length} projects`,
     projects: projectsBlock(p),
   };
