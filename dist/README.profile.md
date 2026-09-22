@@ -9,8 +9,8 @@ Sono Raffaele Raia, laureato in Informatica con 110/110 all'Università degli St
 Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso NTT Data nel settore Quality Assurance con metodologia BDD.
 
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=GoldStygian&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C&column=-1&theme=nord&no-bg=true&no-frame=true" alt="trophy">
+  <a href="https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian">
+    <img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian" alt="trophy">
   </a>
 </p>
 
