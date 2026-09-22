@@ -54,8 +54,10 @@ export function renderReadme(p) {
 */
 
   const stats = config.stats
-    ? `<p align="center">\n  <a href="https://github.com/anuraghazra/github-readme-stats">\n    ${image(config.stats.languages, "Top languages", ' height="200" align="center"')}\n    ${image(config.stats.profile, "GitHub statistics", ' height="200" align="center"')}\n  </a>\n</p>`
+    ? `<p align="center">\n    ${image(config.stats.profile, "GitHub statistics", ' height="200" align="center"')}\n  </a>\n</p>`
     : "";
+
+    /*${image(config.stats.languages, "Top languages", ' height="200" align="center"')} */
 
   return `${config.introImage ? `[![Matrix SVG](${config.introImage})](${config.introImage})\n\n` : ""}# ${person.name}
 

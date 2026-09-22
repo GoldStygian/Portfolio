@@ -9,8 +9,8 @@ Sono Raffaele Raia, laureato in Informatica con 110/110 all'Università degli St
 Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso NTT Data nel settore Quality Assurance con metodologia BDD.
 
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=GoldStygian&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C&column=-1&theme=nord&no-bg=true&no-frame=true" alt="trophy">
+  <a href="https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian">
+    <img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian" alt="trophy">
   </a>
 </p>
 
@@ -19,7 +19,7 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 - **Laboratorio di Sistemi Operativi - [Tic Tac Toe](https://github.com/GoldStygian/LSO)** — Applicazione client-server per il tris con thread separati: server in C con PThread, client JavaFX, comunicazione command-based distribuita via Docker.
 - **Tecnologie Web - [Street Cats](https://github.com/GoldStygian/Project-Tecnologie-Web)** — SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.
 - **Parallel and Distributed Computing - [Algoritmi Paralleli e Distribuiti](https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing)** — Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.
-- **Object Orientation and Databasesss - [FandomWiki](https://github.com/GoldStygian/ProgettoOO)** — Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.
+- **Object Orientation and Databases - [FandomWiki](https://github.com/GoldStygian/ProgettoOO)** — Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.
 - **Laboratorio di Algoritmi e Strutture Dati - [Libreria delle maggiori struutre dati in C++](https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git)** — Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.
 
 
@@ -27,9 +27,7 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 ## Statistics
 
 <p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GoldStygian&layout=compact&theme=radical" alt="Top languages" height="200" align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical&card_width=220" alt="GitHub statistics" height="200" align="center">
+    <img src="https://github-stats-extended.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical" alt="GitHub statistics" height="200" align="center">
   </a>
 </p>
 
