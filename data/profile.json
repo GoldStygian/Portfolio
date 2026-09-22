@@ -182,7 +182,7 @@
       "id": "fandomwiki",
       "title": "FandomWiki",
       "tag": "PROG UNI",
-      "exam": "Object Orientation and Databases",
+      "exam": "Object Orientation and Databasesss",
       "repo": "https://github.com/GoldStygian/ProgettoOO",
       "summary": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL, con applicazione del pattern DAO e gestione completa delle transazioni.",
       "desc": "Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.",
