@@ -1,6 +1,5 @@
 node_modules/
 .env
-dist/
 CLAUDE.md
 README.md
 to do.md
