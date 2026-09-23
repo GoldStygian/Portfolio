@@ -53,11 +53,9 @@ export function renderReadme(p) {
     .join("\n");
 */
 
-  const stats = config.stats
-    ? `<p align="center">\n    ${image(config.stats.profile, "GitHub statistics", ' height="200" align="center"')}\n  </a>\n</p>`
+  const stats = Array.isArray(config.stats) && config.stats.length
+    ? `<p align="center">\n    ${config.stats.map((src) => image(src, "GitHub statistics", ' height="200" align="center"')).join("\n    ")}\n</p>`
     : "";
-
-    /*${image(config.stats.languages, "Top languages", ' height="200" align="center"')} */
 
   return `${config.introImage ? `[![Matrix SVG](${config.introImage})](${config.introImage})\n\n` : ""}# ${person.name}
 
@@ -100,4 +98,20 @@ ${featured}
 | | |
 |---|---|
 ${stack}
+*/
+
+/*
+<p align="center">
+  <a href="https://github.com/rennf93/rennf93">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rennf93&theme=2077" />
+  </a>
+</p>
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=rennf93&theme=2077" height="180em" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rennf93&theme=2077" height="180em" />
+</p>
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rennf93&theme=2077" height="180em" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rennf93&theme=2077" height="180em" />
+</p>
 */
