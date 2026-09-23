@@ -20,14 +20,14 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 - **Tecnologie Web - [Street Cats](https://github.com/GoldStygian/Project-Tecnologie-Web)** — SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.
 - **Parallel and Distributed Computing - [Algoritmi Paralleli e Distribuiti](https://github.com/GoldStygian/Project_Parallel-And-Distribuited_Computing)** — Implementazione di algoritmi paralleli con MPI in C per l'ottimizzazione di flussi di dati e calcolo matriciale su memorie distribuite.
 - **Object Orientation and Databases - [FandomWiki](https://github.com/GoldStygian/ProgettoOO)** — Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.
-- **Laboratorio di Algoritmi e Strutture Dati - [Libreria delle maggiori struutre dati in C++](https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git)** — Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.
+- **Laboratorio di Algoritmi e Strutture Dati - [Libreria delle maggiori strutture dati in C++](https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git)** — Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.
 
 
 
 ## Statistics
 
 <p align="center">
-    <img src="https://github-stats-extended.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical" alt="GitHub statistics" height="200" align="center">
+    <img src="undefined" alt="GitHub statistics" height="200" align="center">
   </a>
 </p>
 
@@ -64,9 +64,9 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 | <img src="https://github.com/devicons/devicon/blob/master/icons/playwright/playwright-original.svg" alt="Playwright" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" alt="Selenium WebDriver" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/junit/junit-original.svg" alt="Junit" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/restassured/restassured-original.svg" alt="RestAssured" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/allure/allure-original.svg" alt="Allure Report" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/cucumber/cucumber-original.svg" alt="Cucumber" width="55" height="55"> |
 
 ### Sistemi operativi
-| Windows | Linux | Mint | Ubunti | Kali | Fedora |
+| Windows | Linux | Mint | Ubuntu | Kali | Fedora |
 |-|-|-|-|-|-|
-| <img src="https://github.com/devicons/devicon/blob/master/icons/windows/windows-original.svg" alt="Windows" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" alt="Linux" width="55" height="55"> | <img src="https://skillicons.dev/icons?i=mint" alt="Mint" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/ubunti/ubunti-original.svg" alt="Ubunti" width="55" height="55"> | <img src="https://skillicons.dev/icons?i=kali" alt="Kali" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/fedora/fedora-original.svg" alt="Fedora" width="55" height="55"> |
+| <img src="https://github.com/devicons/devicon/blob/master/icons/windows/windows-original.svg" alt="Windows" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" alt="Linux" width="55" height="55"> | <img src="https://skillicons.dev/icons?i=mint" alt="Mint" width="55" height="55"> | <img src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu" width="55" height="55"> | <img src="https://skillicons.dev/icons?i=kali" alt="Kali" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/fedora/fedora-original.svg" alt="Fedora" width="55" height="55"> |
 
 ### Documentazione
 | Markdown | LaTeX |

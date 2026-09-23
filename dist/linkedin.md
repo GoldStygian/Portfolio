@@ -67,7 +67,7 @@ SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interatt
 ```
 **Competenze associate:** JavaScript, TypeScript, Angular, Node.js, Express, SCSS, PostgreSQL, Sequelize, Leaflet, Multer, Docker, Zod, Playwright, JWT, Git
 
-### Libreria delle maggiori struutre dati in C++ (Maggio 2024 – Luglio 2024)
+### Libreria delle maggiori strutture dati in C++ (Maggio 2024 – Luglio 2024)
 ```text
 Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.
 ```
@@ -109,7 +109,7 @@ Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, A
 32. Windows
 33. Linux
 34. Mint
-35. Ubunti
+35. Ubuntu
 36. Kali
 37. Fedora
 38. Markdown
