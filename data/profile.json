@@ -192,7 +192,7 @@
     },
     {
       "id": "algolib",
-      "title": "Libreria delle maggiori struutre dati in C++",
+      "title": "Libreria delle maggiori strutture dati in C++",
       "start": "2024-05",
       "end": "2024-07",
       "tag": "PROG UNI",
@@ -213,7 +213,7 @@
       { "label": "Database", "items": ["SQL", "PostgreSQL", "Sequelize"] },
       { "label": "Strumenti", "items": ["Git", "Docker", "Script Bash", "Postman", "Valgrind", "Makefile"] },
       { "label": "Testing", "items": ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"] },
-      { "label": "Sistemi operativi", "items": ["Windows", "Linux", "Mint", "Ubunti", "Kali", "Fedora"] },
+      { "label": "Sistemi operativi", "items": ["Windows", "Linux", "Mint", "Ubuntu", "Kali", "Fedora"] },
       { "label": "Documentazione", "items": ["Markdown", "LaTeX"] },
       { "label": "Cloude", "items": ["Azure"] }
       ],
@@ -248,10 +248,11 @@
       "url": "https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian",
       "image": "https://trophygithubreadmelang.cybee.dpdns.org/?username=GoldStygian"
     },
-    "stats": {
-      "languages": "https://github-readme-stats.vercel.app/api/top-langs/?username=GoldStygian&layout=compact&theme=radical",
-      "profile": "https://github-stats-extended.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical"
-    }
+    "stats": [
+      "https://github-readme-stats.vercel.app/api/top-langs/?username=GoldStygian&layout=compact&theme=radical",
+      "https://github-stats-extended.vercel.app/api?username=GoldStygian&show_icons=true&theme=radical",
+      "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=GoldStygian&theme=2077"
+    ]
   },
   "targets": {
     "cv": { "projects": ["dietiestate25", "tictactoe", "algolib", "streetcats"], "projectsOnPage1": 1 },
