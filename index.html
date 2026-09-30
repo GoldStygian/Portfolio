@@ -725,6 +725,45 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
                 </div>
             </div>
 
+            <!-- Personal projects -->
+            <div class="uni-timeline reveal">
+                <div class="uni-timeline-label">
+                    <i class="ri-code-s-slash-line"></i>
+                    <span>Personal Projects</span>
+                    <span class="uni-timeline-count"><!-- BEGIN:personal-project-count -->1 projects<!-- END:personal-project-count --></span>
+                </div>
+
+                <div class="projects-grid"><!-- BEGIN:personal-projects -->
+<article class="proj-card reveal">
+<div class="proj-thumb" style="background:#12062e;">
+<div class="proj-thumb-bg" style="background:#12062e;">
+<span class="proj-thumb-text">RAG from Scratch</span>
+</div>
+<span class="proj-tag">PERSONAL</span>
+</div>
+<div class="proj-body">
+<h3 class="proj-title">RAG from Scratch</h3>
+<p class="proj-desc">Sistema RAG (Retrieval-Augmented Generation) sviluppato da zero in Python. Fase della pipeline: ingestion, retrieval e generazione. I documenti vengono suddivisi in chunk con overlap configurabile, trasformati in embedding con un modello multilingue e indicizzati in FAISS per la ricerca per similarità. Alla domanda dell'utente vengono recuperati i chunk più rilevanti e passati come contesto a un LLM locale servito da Ollama, istruito a rispondere solo in base al contesto fornito e a dichiarare quando l'informazione non è presente nei documenti. La pipeline gira interamente in locale, senza inviare dati a servizi esterni. Include una cache persistente per documento, basata su hash del contenuto e sulla configurazione corrente, per evitare di ricalcolare embedding già validi.</p>
+<div class="proj-tags">
+<span class="proj-tech">Python</span>
+<span class="proj-tech">FAISS</span>
+<span class="proj-tech">Sentence-Transformers</span>
+<span class="proj-tech">LangChain</span>
+<span class="proj-tech">Ollama</span>
+<span class="proj-tech">OpenAI SDK</span>
+<span class="proj-tech">NumPy</span>
+</div>
+</div>
+<div class="proj-footer">
+<a href="https://github.com/GoldStygian/RAG-from-Scratch" target="_blank" class="proj-link">
+<i class="ri-github-fill"></i> Apri Repository ↗
+</a>
+</div>
+</article>
+<!-- END:personal-projects -->
+                </div>
+            </div>
+
             <div class="projects-cta reveal">
                 <a href="https://github.com/GoldStygian?tab=repositories" target="_blank" class="cta-btn">
                     ▶ Tutti i Repository su GitHub

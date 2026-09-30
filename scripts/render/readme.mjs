@@ -47,6 +47,11 @@ export function renderReadme(p) {
     .map(({ title, exam, repo, desc }) => `- **${exam} - ${repo ? `[${title}](${repo})` : title}** — ${desc}`)
     .join("\n");
 
+  const personalProjects = p.projects
+    .filter((x) => x.tag === "PERSONAL")
+    .map(({ title, repo, desc }) => `- **${repo ? `[${title}](${repo})` : title}** — ${desc}`)
+    .join("\n");
+
     /*
   const featured = universityProjects
     .map(({ title, exam, repo, desc }) => `- **${repo ? `[${title}](${repo})` : title}** — ${desc}`)
@@ -66,6 +71,8 @@ ${p.about.map(plain).join("\n\n")}
 ${config.trophy ? `<p align="center">\n  <a href="${config.trophy.url}">\n    ${image(config.trophy.image, "trophy")}\n  </a>\n</p>` : ""}
 
 ${universityProjects ? `## University's project\n${universityProjects}` : ""}
+
+${personalProjects ? `## Personal Projects\n${personalProjects}` : ""}
 
 ${config.personalProjects ? `## Public Personal project:\n${config.personalProjects.map(({ label, url }) => `- 🛠️ [${label}](${url})`).join("\n")}` : ""}
 

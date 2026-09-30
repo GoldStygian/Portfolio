@@ -22,6 +22,9 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 - **Object Orientation and Databases - [FandomWiki](https://github.com/GoldStygian/ProgettoOO)** — Sistema di gestione Wiki con interfaccia grafica in Java Swing e database relazionale PostgreSQL. Applicazione rigorosa del pattern DAO e gestione completa delle transazioni.
 - **Laboratorio di Algoritmi e Strutture Dati - [Libreria delle maggiori strutture dati in C++](https://github.com/GoldStygian/Project_Laboratory_of_Algorithms_and_DataStructure.git)** — Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, Alberi Binari, Code e Stack. Particolare attenzione all'architettura del codice e allo unit testing.
 
+## Personal Projects
+- **[RAG from Scratch](https://github.com/GoldStygian/RAG-from-Scratch)** — Sistema RAG (Retrieval-Augmented Generation) sviluppato da zero in Python. Fase della pipeline: ingestion, retrieval e generazione. I documenti vengono suddivisi in chunk con overlap configurabile, trasformati in embedding con un modello multilingue e indicizzati in FAISS per la ricerca per similarità. Alla domanda dell'utente vengono recuperati i chunk più rilevanti e passati come contesto a un LLM locale servito da Ollama, istruito a rispondere solo in base al contesto fornito e a dichiarare quando l'informazione non è presente nei documenti. La pipeline gira interamente in locale, senza inviare dati a servizi esterni. Include una cache persistente per documento, basata su hash del contenuto e sulla configurazione corrente, per evitare di ricalcolare embedding già validi.
+
 
 
 ## Statistics

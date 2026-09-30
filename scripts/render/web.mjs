@@ -2,7 +2,7 @@
 // così style.css e script.js continuano a funzionare senza modifiche.
 import { esc, attr, richHtml, fmtMonth, fmtRange, projectsFor } from "../lib/util.mjs";
 
-export const BLOCKS = ["DATA", "about", "education", "experience", "certifications", "project-count", "projects"];
+export const BLOCKS = ["DATA", "about", "education", "experience", "certifications", "project-count", "projects", "personal-project-count", "personal-projects"];
 
 function dataBlock(p) {
   const edu = p.education[0];
@@ -92,8 +92,8 @@ function certificationsBlock(p) {
     .join("\n\n");
 }
 
-function projectsBlock(p) {
-  return projectsFor(p, "web")
+function projectsBlock(projects, p) {
+  return projects
     .map((x) => {
       const href = x.repo || p.person.links.github.url;
       return `<article class="proj-card reveal">
@@ -121,14 +121,18 @@ ${x.tech.map((c) => `<span class="proj-tech">${esc(c)}</span>`).join("\n")}
 }
 
 export function renderBlocks(p) {
+  const universityProjects = projectsFor(p, "web");
+  const personalProjects = p.projects.filter((project) => project.tag === "PERSONAL");
   return {
     DATA: dataBlock(p),
     about: aboutBlock(p),
     education: educationBlock(p),
     experience: experienceBlock(p),
     certifications: certificationsBlock(p),
-    "project-count": `${projectsFor(p, "web").length} projects`,
-    projects: projectsBlock(p),
+    "project-count": `${universityProjects.length} projects`,
+    projects: projectsBlock(universityProjects, p),
+    "personal-project-count": `${personalProjects.length} projects`,
+    "personal-projects": projectsBlock(personalProjects, p),
   };
 }
 
@@ -143,7 +147,7 @@ export function injectWeb(html, p) {
     const a = html.indexOf(begin);
     const b = html.indexOf(end);
     if (a === -1 || b === -1 || b < a) { missing.push(name); continue; }
-    const inline = name === "project-count";
+    const inline = name.endsWith("-count");
     const sep = inline ? "" : "\n";
     html = html.slice(0, a + begin.length) + sep + blocks[name] + sep + html.slice(b);
   }
