@@ -132,14 +132,13 @@ ${css}</style>
     ${section("DRIVING LICENSES", `<ul>${p.drivingLicenses.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>`)}
   </aside>
   <main class="main">
+    ${section("IT SKILLS", skills(p))}
     ${section("EXPERIENCES", experience(p))}
-    ${page1.length ? section("PROJECTS", page1.map(project).join("\n")) : ""}
   </main>
 </div>
 
 <div class="page2">
-  ${page2.length ? section("PROJECTS", page2.map(project).join("\n")) : ""}
-  ${section("IT SKILLS", skills(p))}
+  ${projs.length ? section("PROJECTS", projs.map(project)) : ""}
   ${section("CERTIFICATIONS", certifications(p))}
 </div>
 </body>

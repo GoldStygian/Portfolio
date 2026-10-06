@@ -47,7 +47,7 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 |-|-|-|-|-|
 | <img src="https://github.com/devicons/devicon/blob/master/icons/html/html-original.svg" alt="HTML" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/css/css-original.svg" alt="CSS" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/angular/angular-original.svg" alt="Angular" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/django/django-original.svg" alt="Django" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original.svg" alt="Express" width="55" height="55"> |
 
-### Web bag
+### Backend / Middleware
 | RabbitMQ | Kong | JWT |
 |-|-|-|
 | <img src="https://github.com/devicons/devicon/blob/master/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/kong/kong-original.svg" alt="Kong" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/jwt/jwt-original.svg" alt="JWT" width="55" height="55"> |
@@ -58,14 +58,14 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 | <img src="https://github.com/devicons/devicon/blob/master/icons/sql/sql-original.svg" alt="SQL" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/sequelize/sequelize-original.svg" alt="Sequelize" width="55" height="55"> |
 
 ### Strumenti
-| Git | Docker | Script Bash | Postman | Valgrind | Makefile |
+| Git | Docker | Bash scripting | Postman | Valgrind | Makefile |
 |-|-|-|-|-|-|
-| <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" alt="Git" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg" alt="Docker" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/scriptbash/scriptbash-original.svg" alt="Script Bash" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg" alt="Postman" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/valgrind/valgrind-original.svg" alt="Valgrind" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/makefile/makefile-original.svg" alt="Makefile" width="55" height="55"> |
+| <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" alt="Git" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg" alt="Docker" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/bashscripting/bashscripting-original.svg" alt="Bash scripting" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg" alt="Postman" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/valgrind/valgrind-original.svg" alt="Valgrind" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/makefile/makefile-original.svg" alt="Makefile" width="55" height="55"> |
 
 ### Testing
-| Playwright | Selenium WebDriver | Junit | RestAssured | Allure Report | Cucumber |
+| Playwright | Selenium WebDriver | JUnit | REST Assured | Allure Report | Cucumber |
 |-|-|-|-|-|-|
-| <img src="https://github.com/devicons/devicon/blob/master/icons/playwright/playwright-original.svg" alt="Playwright" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" alt="Selenium WebDriver" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/junit/junit-original.svg" alt="Junit" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/restassured/restassured-original.svg" alt="RestAssured" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/allure/allure-original.svg" alt="Allure Report" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/cucumber/cucumber-original.svg" alt="Cucumber" width="55" height="55"> |
+| <img src="https://github.com/devicons/devicon/blob/master/icons/playwright/playwright-original.svg" alt="Playwright" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" alt="Selenium WebDriver" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/junit/junit-original.svg" alt="JUnit" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/restassured/restassured-original.svg" alt="REST Assured" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/allure/allure-original.svg" alt="Allure Report" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/cucumber/cucumber-original.svg" alt="Cucumber" width="55" height="55"> |
 
 ### Sistemi operativi
 | Windows | Linux | Mint | Ubuntu | Kali | Fedora |
@@ -77,7 +77,7 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 |-|-|
 | <img src="https://github.com/devicons/devicon/blob/master/icons/markdown/markdown-original.svg" alt="Markdown" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/latex/latex-original.svg" alt="LaTeX" width="55" height="55"> |
 
-### Cloude
+### Cloud
 | Azure |
 |-|
 | <img src="https://github.com/devicons/devicon/blob/master/icons/azure/azure-original.svg" alt="Azure" width="55" height="55"> |

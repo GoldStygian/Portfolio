@@ -16,7 +16,7 @@
       "portfolio": { "label": "Portfolio", "url": "https://goldstygian.github.io/Portfolio/" }
     }
   },
-  "summary": "Sono Raffaele Raia, laureato in Informatica con 110/110 all'**Università degli Studi di Napoli Federico II. Mi appassionano lo sviluppo software, le reti, i sistemi operativi e la cybersecurity. Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso NTT Data nel settore Quality Assurance con metodologia BDD.",
+  "summary": "Sono Raffaele Raia, laureato in Informatica con 110/110 all'Università degli Studi di Napoli Federico II. Mi appassionano lo sviluppo software, le reti, i sistemi operativi e la cybersecurity. Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso NTT Data nel settore Quality Assurance con metodologia BDD.",
   "about": [
     "Sono **Raffaele Raia**, laureato in Informatica con **110/110** all'**Università degli Studi di Napoli Federico II**. Mi appassionano lo sviluppo software, le reti, i sistemi operativi e la **cybersecurity**.",
     "Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria del software e programmazione. Ho svolto un tirocinio presso **NTT Data** nel settore Quality Assurance con metodologia BDD."
@@ -224,13 +224,13 @@
     [
       { "label": "Linguaggi", "items": ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "Dart"] },
       { "label": "Web", "items": ["HTML", "CSS", "Angular", "Django", "Express"] },
-      { "label": "Web bag", "items": ["RabbitMQ", "Kong", "JWT"] },
+      { "label": "Backend / Middleware", "items": ["RabbitMQ", "Kong", "JWT"] },
       { "label": "Database", "items": ["SQL", "PostgreSQL", "Sequelize"] },
-      { "label": "Strumenti", "items": ["Git", "Docker", "Script Bash", "Postman", "Valgrind", "Makefile"] },
-      { "label": "Testing", "items": ["Playwright", "Selenium WebDriver", "Junit", "RestAssured", "Allure Report", "Cucumber"] },
+      { "label": "Strumenti", "items": ["Git", "Docker", "Bash scripting", "Postman", "Valgrind", "Makefile"] },
+      { "label": "Testing", "items": ["Playwright", "Selenium WebDriver", "JUnit", "REST Assured", "Allure Report", "Cucumber"] },
       { "label": "Sistemi operativi", "items": ["Windows", "Linux", "Mint", "Ubuntu", "Kali", "Fedora"] },
       { "label": "Documentazione", "items": ["Markdown", "LaTeX"] },
-      { "label": "Cloude", "items": ["Azure"] }
+      { "label": "Cloud", "items": ["Azure"] }
       ],
   "certifications": [
     {
@@ -270,7 +270,7 @@
     ]
   },
   "targets": {
-    "cv": { "projects": ["dietiestate25", "tictactoe", "algolib", "streetcats"], "projectsOnPage1": 1 },
+    "cv": { "projects": ["dietiestate25", "tictactoe", "fandomwiki", "algolib", "streetcats"], "projectsOnPage1": 1 },
     "web": { "projects": ["dietiestate25", "tictactoe", "streetcats", "pdc", "fandomwiki", "algolib"] },
     "linkedin": {
       "projects": ["dietiestate25", "tictactoe", "streetcats", "algolib"],

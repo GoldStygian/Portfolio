@@ -96,14 +96,14 @@ Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, A
 19. Sequelize
 20. Git
 21. Docker
-22. Script Bash
+22. Bash scripting
 23. Postman
 24. Valgrind
 25. Makefile
 26. Playwright
 27. Selenium WebDriver
-28. Junit
-29. RestAssured
+28. JUnit
+29. REST Assured
 30. Allure Report
 31. Cucumber
 32. Windows
