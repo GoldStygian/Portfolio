@@ -96,7 +96,12 @@ const section = (title, body, { line = false, cls = "" } = {}) =>
   `<section class="${cls}"><h2${line ? "" : ' class="u"'}>${title}</h2>${body}</section>`;
 
 export function renderCv(p, { css, fontsCss = "" }) {
-  const projs = projectsFor(p, "cv");
+  const configuredProjects = projectsFor(p, "cv");
+  const configuredProjectIds = new Set(configuredProjects.map((project) => project.id));
+  const personalProjects = p.projects.filter(
+    (project) => project.tag === "PERSONAL" && !configuredProjectIds.has(project.id)
+  );
+  const projs = [...configuredProjects, ...personalProjects];
   const n1 = p.targets.cv.projectsOnPage1 ?? 1;
   const page1 = projs.slice(0, n1);
   const page2 = projs.slice(n1);
