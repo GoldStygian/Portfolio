@@ -138,7 +138,7 @@ ${css}</style>
 </div>
 
 <div class="page2">
-  ${projs.length ? section("PROJECTS", projs.map(project)) : ""}
+  ${projs.length ? section("PROJECTS", projs.map(project).join("\n")) : ""}
   ${section("CERTIFICATIONS", certifications(p))}
 </div>
 </body>

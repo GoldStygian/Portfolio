@@ -155,8 +155,8 @@
     {
       "id": "streetcats",
       "title": "Street Cats",
-      "start": "2025-07",
-      "end": null,
+      "start": "2025-06",
+      "end": "2025-07",
       "tag": "PROG UNI",
       "exam": "Tecnologie Web",
       "repo": "https://github.com/GoldStygian/Project-Tecnologie-Web",

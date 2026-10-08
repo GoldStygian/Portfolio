@@ -61,7 +61,7 @@ Applicazione client-server per il tris con thread separati: server in C con PThr
 ```
 **Competenze associate:** C, Java, JavaFX, PThread, Docker
 
-### Street Cats (Luglio 2025)
+### Street Cats (Giugno 2025 – Luglio 2025)
 ```text
 SPA sociale con stack TypeScript/Angular/Node.js. Gestione cartografica interattiva con Leaflet, database PostgreSQL/Sequelize e suite di test automatizzati Playwright.
 ```
