@@ -58,9 +58,9 @@ Durante il mio percorso ho sviluppato solide basi in strutture dati, ingegneria 
 | <img src="https://github.com/devicons/devicon/blob/master/icons/sql/sql-original.svg" alt="SQL" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/sequelize/sequelize-original.svg" alt="Sequelize" width="55" height="55"> |
 
 ### Strumenti
-| Git | Docker | Bash scripting | Postman | Valgrind | Makefile |
-|-|-|-|-|-|-|
-| <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" alt="Git" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg" alt="Docker" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/bashscripting/bashscripting-original.svg" alt="Bash scripting" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg" alt="Postman" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/valgrind/valgrind-original.svg" alt="Valgrind" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/makefile/makefile-original.svg" alt="Makefile" width="55" height="55"> |
+| Git | GitHub Actions | Docker | Bash scripting | Postman | Valgrind | Makefile |
+|-|-|-|-|-|-|-|
+| <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" alt="Git" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg" alt="Docker" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/bashscripting/bashscripting-original.svg" alt="Bash scripting" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg" alt="Postman" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/valgrind/valgrind-original.svg" alt="Valgrind" width="55" height="55"> | <img src="https://github.com/devicons/devicon/blob/master/icons/makefile/makefile-original.svg" alt="Makefile" width="55" height="55"> |
 
 ### Testing
 | Playwright | Selenium WebDriver | JUnit | REST Assured | Allure Report | Cucumber |

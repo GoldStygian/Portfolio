@@ -73,7 +73,7 @@ Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, A
 ```
 **Competenze associate:** C++, CMake, Hash Table, BST, Unit Testing, OOP
 
-## Competenze (40/50) — le prime 3 vanno messe in evidenza
+## Competenze (41/50) — le prime 3 vanno messe in evidenza
 
 1. Java
 2. Python
@@ -95,26 +95,27 @@ Libreria personalizzata in C++ per strutture dati avanzate: Tabelle Hash, BST, A
 18. PostgreSQL
 19. Sequelize
 20. Git
-21. Docker
-22. Bash scripting
-23. Postman
-24. Valgrind
-25. Makefile
-26. Playwright
-27. Selenium WebDriver
-28. JUnit
-29. REST Assured
-30. Allure Report
-31. Cucumber
-32. Windows
-33. Linux
-34. Mint
-35. Ubuntu
-36. Kali
-37. Fedora
-38. Markdown
-39. LaTeX
-40. Azure
+21. GitHub Actions
+22. Docker
+23. Bash scripting
+24. Postman
+25. Valgrind
+26. Makefile
+27. Playwright
+28. Selenium WebDriver
+29. JUnit
+30. REST Assured
+31. Allure Report
+32. Cucumber
+33. Windows
+34. Linux
+35. Mint
+36. Ubuntu
+37. Kali
+38. Fedora
+39. Markdown
+40. LaTeX
+41. Azure
 
 ## Licenze e certificazioni
 
