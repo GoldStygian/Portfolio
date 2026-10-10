@@ -1,3 +1,41 @@
+// Responsive navigation, with all links available when JavaScript is disabled.
+const navigation = document.querySelector('nav');
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.getElementById('nav-links');
+const compactNavigation = window.matchMedia('(max-width: 1024px)');
+
+function closeNavigation() {
+    navigation.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+}
+
+if (navigation && navToggle && navLinks) {
+    navigation.classList.add('nav-enhanced');
+    navToggle.hidden = false;
+    navToggle.addEventListener('click', () => {
+        const open = navigation.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', String(open));
+    });
+    navLinks.addEventListener('click', e => {
+        if (e.target.closest('a')) closeNavigation();
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && navigation.classList.contains('nav-open')) {
+            closeNavigation();
+            navToggle.focus();
+        }
+    });
+    compactNavigation.addEventListener('change', closeNavigation);
+
+    // Keep anchor targets below the fixed header, including after font loading.
+    new ResizeObserver(() => {
+        const height = compactNavigation.matches
+            ? navigation.querySelector('.nav-top').getBoundingClientRect().height + 2
+            : navigation.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--nav-height', `${height}px`);
+    }).observe(navigation);
+}
+
 // Custom Cursor
 const cursor = document.getElementById('cursor');
 document.addEventListener('mousemove', e => {

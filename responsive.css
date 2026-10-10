@@ -1,0 +1,333 @@
+/* Shared layout rules: kept after the stylesheet of either theme. */
+:root {
+    --page-gutter: clamp(16px, 4vw, 40px);
+    --nav-height: 100px;
+}
+
+html {
+    scroll-padding-top: calc(var(--nav-height) + 16px);
+}
+
+#about, #formazione, #experience, #coding-stats, #projects, #contact,
+.cert-wrap, .reports-header, footer {
+    padding-inline: var(--page-gutter);
+}
+
+#hero {
+    min-height: 100svh;
+    padding: calc(var(--nav-height) + 40px) var(--page-gutter) 32px;
+    gap: 32px;
+}
+
+#hero > .cmd-bar {
+    position: relative !important;
+    margin: 0 calc(-1 * var(--page-gutter)) -32px;
+}
+
+.hero-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(24px, 4vw, 60px);
+}
+
+.hero-left {
+    container-type: inline-size;
+}
+
+.hero-headline {
+    font-size: clamp(36px, 5.2vw, 88px);
+    font-size: clamp(32px, 14cqi, 100px);
+    line-height: 1;
+}
+
+.hero-inner > *, .about-grid > *, .edu-grid > *, .stats-grid > *,
+.projects-grid > *, .contact-inner > *, .footer-inner > * {
+    min-width: 0;
+}
+
+.edu-grid, .stats-grid, .projects-grid, .contact-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.skills-body {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+}
+
+.section-title, .edu-title, .exp-role, .cert-content, .proj-title,
+.proj-thumb-text, .report-card, .footer-brand, .contact-item a,
+.contact-item span, .hero-eyebrow {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.section-title {
+    font-size: clamp(28px, 4vw, 60px);
+    line-height: 1.05;
+}
+
+.section-header {
+    flex-wrap: wrap;
+}
+
+.section-rule {
+    min-width: 24px;
+}
+
+.cmd-bar, .skills-panel-header, .stats-block-header, .stats-cmd,
+.skill-group-header, .cert-meta, .uni-timeline-label {
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cmd-bar > span, .stats-cmd > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.stats-block-icon {
+    flex-shrink: 0;
+}
+
+.ht-line {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.hero-term-body {
+    height: 360px;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.proj-thumb-text {
+    padding-inline: 12px;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 36px);
+}
+
+.edu-cfu {
+    flex-shrink: 0;
+}
+
+.nav-toggle {
+    display: none;
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    background: var(--ink);
+    color: var(--bg);
+    font: 700 12px var(--font-mono);
+    cursor: pointer;
+}
+
+.nav-toggle:focus-visible, a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--olive);
+    outline-offset: 3px;
+}
+
+@media (max-width: 1100px) {
+    .section-title em {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-top {
+        padding: 8px var(--page-gutter);
+        gap: 12px;
+    }
+
+    .nav-masthead {
+        font-size: clamp(16px, 2.5vw, 22px);
+        letter-spacing: .04em;
+    }
+
+    .nav-status {
+        display: none;
+    }
+
+    .nav-toggle:not([hidden]) {
+        display: block;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 8px var(--page-gutter);
+        max-height: calc(100svh - var(--nav-height));
+        overflow-y: auto;
+    }
+
+    nav.nav-enhanced .nav-links {
+        display: none;
+    }
+
+    nav.nav-enhanced.nav-open .nav-links {
+        display: grid;
+    }
+
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 10px;
+        font-size: 10px;
+        letter-spacing: .03em;
+        border: 1px solid var(--rule);
+    }
+
+    #theme-toggle {
+        margin-right: 0 !important;
+    }
+
+    .edu-grid, .stats-grid, .contact-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero-right {
+        display: flex;
+        padding-top: 0;
+        justify-content: flex-start;
+    }
+
+    .hero-terminal {
+        max-width: 100%;
+    }
+
+    .hero-headline {
+        font-size: clamp(32px, 13cqi, 100px);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid, .footer-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #about, #formazione, #experience, #coding-stats, #projects, #contact,
+    .cert-wrap {
+        padding-block: 56px;
+    }
+
+    .section-header {
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+
+    .section-number {
+        flex-basis: 100%;
+    }
+
+    .section-title {
+        font-size: clamp(24px, 6.5vw, 38px);
+    }
+
+    .section-rule {
+        display: none;
+    }
+
+    .hero-eyebrow {
+        font-size: 10px;
+        letter-spacing: .08em;
+        line-height: 1.6;
+    }
+
+    .hero-deck {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    .hero-links {
+        margin-bottom: 28px;
+    }
+
+    .hero-link, .social-btn {
+        min-height: 44px;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 12px;
+    }
+
+    .hero-term-body {
+        padding: 14px 12px;
+        font-size: 11px;
+    }
+
+    .edu-card, .exp-card, .stats-block, .contact-form, .cert-card {
+        padding: 20px 16px;
+    }
+
+    .edu-area-title {
+        margin-inline: -16px;
+    }
+
+    .cert-card {
+        gap: 12px;
+    }
+
+    .exp-timeline {
+        padding-left: 20px;
+    }
+
+    .exp-dot {
+        left: -27px;
+    }
+
+    .uni-timeline-label {
+        display: flex;
+        letter-spacing: .06em;
+    }
+
+    .uni-timeline-count {
+        margin-left: 0;
+    }
+
+    .contact-item {
+        gap: 10px;
+    }
+
+    .form-input, .form-textarea {
+        font-size: 16px;
+    }
+
+    .form-btn, .cta-btn {
+        min-height: 44px;
+        padding: 14px 16px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .report-card {
+        width: calc(100vw - 2 * var(--page-gutter));
+        padding: 24px 20px;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    body {
+        cursor: auto;
+    }
+
+    #cursor {
+        display: none;
+    }
+
+    .form-btn {
+        cursor: pointer;
+    }
+}

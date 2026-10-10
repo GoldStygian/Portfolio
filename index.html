@@ -119,6 +119,7 @@ const DATA = {
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" id="theme-style">
+    <link rel="stylesheet" href="responsive.css">
 
 </head>
 
@@ -132,7 +133,7 @@ const DATA = {
     <!-- ═══════════════════════════════════════════════════
          NAV
     ═══════════════════════════════════════════════════ -->
-    <nav>
+    <nav aria-label="Navigazione principale">
         <div class="nav-top">
             <span class="nav-masthead data.name">Raffaele Raia</span>
             <div class="nav-status">
@@ -141,8 +142,9 @@ const DATA = {
                 <span style="opacity:.4">|</span>
                 <span>Federico II, Napoli</span>
             </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>Menu ☰</button>
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
             <a href="#" id="theme-toggle" class="cta" style="margin-right: 12px; cursor: pointer;">Style ⟲</a>
             <a href="#about">/About</a>
             <a href="#formazione">/Formazione</a>

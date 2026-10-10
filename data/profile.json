@@ -226,7 +226,7 @@
       { "label": "Web", "items": ["HTML", "CSS", "Angular", "Django", "Express"] },
       { "label": "Backend / Middleware", "items": ["RabbitMQ", "Kong", "JWT"] },
       { "label": "Database", "items": ["SQL", "PostgreSQL", "Sequelize"] },
-      { "label": "Strumenti", "items": ["Git", "Docker", "Bash scripting", "Postman", "Valgrind", "Makefile"] },
+      { "label": "Strumenti", "items": ["Git", "GitHub Actions", "Docker", "Bash scripting", "Postman", "Valgrind", "Makefile"] },
       { "label": "Testing", "items": ["Playwright", "Selenium WebDriver", "JUnit", "REST Assured", "Allure Report", "Cucumber"] },
       { "label": "Sistemi operativi", "items": ["Windows", "Linux", "Mint", "Ubuntu", "Kali", "Fedora"] },
       { "label": "Documentazione", "items": ["Markdown", "LaTeX"] },
